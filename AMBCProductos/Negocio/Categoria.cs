@@ -8,8 +8,24 @@ namespace AMBCProductos.Negocio
 {
     public class Categoria
     {
-        int IdCategoria{ get; set; }
-        string Nombre { get; set; }
-        string? Descripcion { get; set; }
+        private int idCategoria;
+        private string nombre;
+        private string? descripcion;
+
+        public int IdCategoria
+        {
+            get { return idCategoria; }
+            set { idCategoria = value; }
+        }
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+        public string? Descripcion
+        {
+            get { return descripcion; }
+            set { descripcion = value; }
+        }
     }
 }

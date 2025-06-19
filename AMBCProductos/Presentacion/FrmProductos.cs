@@ -41,13 +41,14 @@ namespace AMBCProductos.Presentacion
             List<Producto> lista = oServicio.TraerProductos(oFiltro);
             foreach (Producto P in lista)
             {
-                dgvProductos.Rows.Add(P.IdProducto, P.Nombre, P.TipoProductoId, P.Marca.Descripcion, P.CategoriaId, P.LimiteStock);
+                dgvProductos.Rows.Add(P.IdProducto, P.Nombre, P.TipoProducto.IdTipoProducto, P.Marca.Descripcion, P.Categoria.IdCategoria, P.LimiteStockId);
             }
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Estas seguro de querer salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+            if (oServicio.MensajePregunta("¿Estas seguro de querer salir?"))
             {
                 Close();
             }

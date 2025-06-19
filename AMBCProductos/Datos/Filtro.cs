@@ -11,7 +11,6 @@ namespace AMBCProductos.Datos
         public string Nombre { get; set; }
         public int Marca { get; set; }
         public int Categoria { get; set; }
-        public int Pk { get; set; }
 
     }
 }

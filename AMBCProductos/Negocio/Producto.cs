@@ -11,11 +11,11 @@ namespace AMBCProductos.Negocio
         private int idProducto;
         private string nombre;
         private string descripcion;
-        private int tipoProductoId; // cambiar esto a TipoProducto
+        private TipoProducto tipoProducto;
         private Marca marca;
-        private int categoriaId; //cambiar esto a Categoria
+        private Categoria categoria;
         private decimal pesoKg;
-        private int limiteStock;
+        private int limiteStockId;
         private string rutaImg;
 
 
@@ -38,10 +38,10 @@ namespace AMBCProductos.Negocio
             set { descripcion = value; }
         }
 
-        public int TipoProductoId
+        public TipoProducto TipoProducto
         {
-            get { return tipoProductoId; }
-            set { tipoProductoId = value; }
+            get { return tipoProducto; }
+            set { tipoProducto = value; }
         }
 
         public Marca Marca
@@ -50,10 +50,10 @@ namespace AMBCProductos.Negocio
             set { marca = value; }
         }
 
-        public int CategoriaId
+        public Categoria Categoria
         {
-            get { return categoriaId; }
-            set { categoriaId = value; }
+            get { return categoria; }
+            set { categoria = value; }
         }
 
         public decimal PesoKg
@@ -62,10 +62,10 @@ namespace AMBCProductos.Negocio
             set { pesoKg = value; }
         }
 
-        public int LimiteStock
+        public int LimiteStockId
         {
-            get { return limiteStock; }
-            set { limiteStock = value; }
+            get { return limiteStockId; }
+            set { limiteStockId = value; }
         }
 
         public string RutaImg

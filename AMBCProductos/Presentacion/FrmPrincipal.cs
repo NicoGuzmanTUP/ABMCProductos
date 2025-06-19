@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AMBCProductos.Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,19 @@ namespace AMBCProductos.Presentacion
 {
     public partial class FrmPrincipal : Form
     {
+        ProductoServicio oServicio;
         public FrmPrincipal()
         {
+            oServicio = new ProductoServicio();
             InitializeComponent();
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Close();
+            if (oServicio.MensajePregunta("¿Estas seguro de querer salir?"))
+            {
+                Close();
+            }
         }
 
         private void librosToolStripMenuItem_Click(object sender, EventArgs e)

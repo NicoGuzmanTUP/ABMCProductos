@@ -38,5 +38,26 @@ namespace AMBCProductos.Negocio
 
             return tabla;
         }
+
+        public void MensajeExito(string mensaje)
+        {
+            MessageBox.Show(mensaje, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void MensajeAdvertencia(string mensaje)
+        {
+            MessageBox.Show(mensaje, "No válido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
+
+        public bool MensajePregunta(string mensaje)
+        {
+            bool yes = false;
+            if (MessageBox.Show(mensaje, "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                yes = true;
+            }
+
+            return yes;
+        }
     }
 }

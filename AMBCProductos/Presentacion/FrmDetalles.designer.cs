@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             GrbDetalles = new GroupBox();
+            rbt100 = new RadioButton();
+            rbt50 = new RadioButton();
+            rbt30 = new RadioButton();
             cboCategoria = new ComboBox();
             cboMarca = new ComboBox();
             cboTipoProducto = new ComboBox();
-            nudLimite = new NumericUpDown();
             label5 = new Label();
             nudPeso = new NumericUpDown();
             label4 = new Label();
@@ -48,16 +50,17 @@
             btnAceptar = new MetroFramework.Controls.MetroButton();
             btnCancelar = new MetroFramework.Controls.MetroButton();
             GrbDetalles.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nudLimite).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudPeso).BeginInit();
             SuspendLayout();
             // 
             // GrbDetalles
             // 
+            GrbDetalles.Controls.Add(rbt100);
+            GrbDetalles.Controls.Add(rbt50);
+            GrbDetalles.Controls.Add(rbt30);
             GrbDetalles.Controls.Add(cboCategoria);
             GrbDetalles.Controls.Add(cboMarca);
             GrbDetalles.Controls.Add(cboTipoProducto);
-            GrbDetalles.Controls.Add(nudLimite);
             GrbDetalles.Controls.Add(label5);
             GrbDetalles.Controls.Add(nudPeso);
             GrbDetalles.Controls.Add(label4);
@@ -70,17 +73,51 @@
             GrbDetalles.Controls.Add(LblAutor);
             GrbDetalles.Controls.Add(LblNombre);
             GrbDetalles.Controls.Add(LblCodigo);
-            GrbDetalles.Location = new Point(32, 29);
+            GrbDetalles.Location = new Point(32, 13);
             GrbDetalles.Margin = new Padding(4);
             GrbDetalles.Name = "GrbDetalles";
             GrbDetalles.Padding = new Padding(4);
-            GrbDetalles.Size = new Size(420, 423);
+            GrbDetalles.Size = new Size(420, 431);
             GrbDetalles.TabIndex = 35;
             GrbDetalles.TabStop = false;
             GrbDetalles.Text = "Detalles";
             // 
+            // rbt100
+            // 
+            rbt100.AutoSize = true;
+            rbt100.Location = new Point(309, 379);
+            rbt100.Name = "rbt100";
+            rbt100.Size = new Size(43, 19);
+            rbt100.TabIndex = 59;
+            rbt100.TabStop = true;
+            rbt100.Text = "100";
+            rbt100.UseVisualStyleBackColor = true;
+            // 
+            // rbt50
+            // 
+            rbt50.AutoSize = true;
+            rbt50.Location = new Point(236, 379);
+            rbt50.Name = "rbt50";
+            rbt50.Size = new Size(37, 19);
+            rbt50.TabIndex = 58;
+            rbt50.TabStop = true;
+            rbt50.Text = "50";
+            rbt50.UseVisualStyleBackColor = true;
+            // 
+            // rbt30
+            // 
+            rbt30.AutoSize = true;
+            rbt30.Location = new Point(157, 379);
+            rbt30.Name = "rbt30";
+            rbt30.Size = new Size(37, 19);
+            rbt30.TabIndex = 57;
+            rbt30.TabStop = true;
+            rbt30.Text = "30";
+            rbt30.UseVisualStyleBackColor = true;
+            // 
             // cboCategoria
             // 
+            cboCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCategoria.FormattingEnabled = true;
             cboCategoria.Location = new Point(158, 273);
             cboCategoria.Name = "cboCategoria";
@@ -89,6 +126,7 @@
             // 
             // cboMarca
             // 
+            cboMarca.DropDownStyle = ComboBoxStyle.DropDownList;
             cboMarca.FormattingEnabled = true;
             cboMarca.Location = new Point(158, 219);
             cboMarca.Name = "cboMarca";
@@ -97,23 +135,17 @@
             // 
             // cboTipoProducto
             // 
+            cboTipoProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             cboTipoProducto.FormattingEnabled = true;
-            cboTipoProducto.Location = new Point(158, 170);
+            cboTipoProducto.Location = new Point(158, 166);
             cboTipoProducto.Name = "cboTipoProducto";
             cboTipoProducto.Size = new Size(215, 23);
             cboTipoProducto.TabIndex = 54;
             // 
-            // nudLimite
-            // 
-            nudLimite.Location = new Point(157, 372);
-            nudLimite.Name = "nudLimite";
-            nudLimite.Size = new Size(65, 23);
-            nudLimite.TabIndex = 53;
-            // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(29, 376);
+            label5.Location = new Point(29, 381);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(88, 15);
@@ -122,6 +154,7 @@
             // 
             // nudPeso
             // 
+            nudPeso.DecimalPlaces = 2;
             nudPeso.Location = new Point(157, 323);
             nudPeso.Name = "nudPeso";
             nudPeso.Size = new Size(65, 23);
@@ -226,7 +259,7 @@
             // 
             btnAceptar.BackColor = SystemColors.ActiveCaption;
             btnAceptar.Highlight = false;
-            btnAceptar.Location = new Point(98, 478);
+            btnAceptar.Location = new Point(98, 470);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(94, 55);
             btnAceptar.Style = MetroFramework.MetroColorStyle.Blue;
@@ -235,11 +268,12 @@
             btnAceptar.Text = "Aceptar";
             btnAceptar.Theme = MetroFramework.MetroThemeStyle.Light;
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click_1;
             // 
             // btnCancelar
             // 
             btnCancelar.Highlight = false;
-            btnCancelar.Location = new Point(290, 478);
+            btnCancelar.Location = new Point(290, 470);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 55);
             btnCancelar.Style = MetroFramework.MetroColorStyle.Blue;
@@ -247,12 +281,13 @@
             btnCancelar.TabIndex = 55;
             btnCancelar.Text = "Cancelar";
             btnCancelar.Theme = MetroFramework.MetroThemeStyle.Light;
+            btnCancelar.Click += btnCancelar_Click_1;
             // 
             // FrmDetalles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(488, 558);
+            ClientSize = new Size(488, 556);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(GrbDetalles);
@@ -262,7 +297,6 @@
             Load += FrmDetalles_Load;
             GrbDetalles.ResumeLayout(false);
             GrbDetalles.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)nudLimite).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudPeso).EndInit();
             ResumeLayout(false);
         }
@@ -281,12 +315,14 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private NumericUpDown nudLimite;
         private Label label5;
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroButton btnCancelar;
         private ComboBox cboTipoProducto;
         private ComboBox cboCategoria;
         private ComboBox cboMarca;
+        private RadioButton rbt100;
+        private RadioButton rbt50;
+        private RadioButton rbt30;
     }
 }

@@ -37,11 +37,13 @@ namespace AMBCProductos.Datos
                 Producto oProducto = new Producto();
                 oProducto.IdProducto = (int)fila[0];
                 oProducto.Nombre = fila[1].ToString();                
-                oProducto.TipoProductoId = Convert.ToInt32(fila[2]);
+                oProducto.TipoProducto = new TipoProducto();
+                oProducto.TipoProducto.IdTipoProducto = Convert.ToInt32(fila[2]);
                 oProducto.Marca = new Marca();
                 oProducto.Marca.Descripcion = fila[3].ToString();
-                oProducto.CategoriaId = (int)fila[4];
-                oProducto.LimiteStock = (int)fila[5];
+                oProducto.Categoria = new Categoria(); 
+                oProducto.Categoria.IdCategoria = (int)fila[4];
+                oProducto.LimiteStockId = (int)fila[5];
 
                 //oProducto.RutaImg = fila[8].ToString();
                 Lista.Add(oProducto);
@@ -63,14 +65,15 @@ namespace AMBCProductos.Datos
                 oProducto.IdProducto = (int)fila[0];
                 oProducto.Nombre = fila[1].ToString();
                 oProducto.Descripcion = fila[2].ToString();
-                oProducto.TipoProductoId = Convert.ToInt32(fila[3]);
+                oProducto.TipoProducto = new TipoProducto();
+                oProducto.TipoProducto.IdTipoProducto = Convert.ToInt32(fila[3]);
                 oProducto.Marca = new Marca();
                 oProducto.Marca.IdMarca = Convert.ToInt32(fila[4]);
-                oProducto.CategoriaId = (int)fila[5];
+                oProducto.Categoria = new Categoria();
+                oProducto.Categoria.IdCategoria = (int)fila[5];
                 oProducto.PesoKg = Convert.ToDecimal(fila[6]);
-                oProducto.LimiteStock = (int)fila[5];
+                oProducto.LimiteStockId = (int)fila[7];
 
-                //oProducto.RutaImg = fila[8].ToString();
                 Lista.Add(oProducto);
             }
             return Lista[0];
@@ -82,18 +85,18 @@ namespace AMBCProductos.Datos
         {
             int filasAfectadas = 0;
 
-            string consultaSQL = $"update productos set nombre = @nombre, descripcion = @descripcion, tipo_producto_id = @tipoProducto , marca_id = @marca, categoria_id = @categoria, peso_kg = @pesoKg, limite_stock_id = @limiteStock where id_producto = @idProducto";
+            string consultaSQL = $"update productos set nombre = @nombre, descripcion = @descripcion, tipo_producto_id = @idTipoProducto , marca_id = @idMarca, categoria_id = @idCategoria, peso_kg = @pesoKg, limite_stock_id = @LimiteStockId where id_producto =" + oProducto.IdProducto;
 
 
             List<Parametro> listaParametros = new List<Parametro>();
 
             listaParametros.Add(new Parametro("@nombre", oProducto.Nombre));
             listaParametros.Add(new Parametro("@descripcion", oProducto.Descripcion));
-            listaParametros.Add(new Parametro("@tipoProducto", oProducto.TipoProductoId));
-            listaParametros.Add(new Parametro("@marca", oProducto.Marca));
-            listaParametros.Add(new Parametro("@categoria", oProducto.CategoriaId));
+            listaParametros.Add(new Parametro("@idTipoProducto", oProducto.TipoProducto.IdTipoProducto));
+            listaParametros.Add(new Parametro("@idMarca", oProducto.Marca.IdMarca));
+            listaParametros.Add(new Parametro("@idCategoria", oProducto.Categoria.IdCategoria));
             listaParametros.Add(new Parametro("@pesoKg", oProducto.PesoKg));
-            listaParametros.Add(new Parametro("@limiteStock", oProducto.LimiteStock));
+            listaParametros.Add(new Parametro("@LimiteStockId", oProducto.LimiteStockId));
 
             filasAfectadas = oBD.ActualizarBD(consultaSQL, listaParametros);
 
