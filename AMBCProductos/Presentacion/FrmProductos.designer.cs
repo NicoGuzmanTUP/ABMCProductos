@@ -41,6 +41,8 @@
             cbTodos = new MetroFramework.Controls.MetroCheckBox();
             btnConsultar = new MetroFramework.Controls.MetroButton();
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
             dgvProductos = new DataGridView();
             idProducto = new DataGridViewTextBoxColumn();
             nombre = new DataGridViewTextBoxColumn();
@@ -48,8 +50,6 @@
             descripcion = new DataGridViewTextBoxColumn();
             CategoriaId = new DataGridViewTextBoxColumn();
             LimiteStock = new DataGridViewTextBoxColumn();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
@@ -147,6 +147,7 @@
             btnVer.TabIndex = 28;
             btnVer.Text = "Ver";
             btnVer.Theme = MetroFramework.MetroThemeStyle.Light;
+            btnVer.Click += btnVer_Click;
             // 
             // btnActualizar
             // 
@@ -172,6 +173,7 @@
             btnEliminar.TabIndex = 30;
             btnEliminar.Text = "Eliminar";
             btnEliminar.Theme = MetroFramework.MetroThemeStyle.Light;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // cbTodos
             // 
@@ -230,6 +232,22 @@
             metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             metroPanel1.VerticalScrollbarSize = 10;
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(19, 165);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(186, 23);
+            comboBox2.TabIndex = 34;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(19, 99);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(186, 23);
+            comboBox1.TabIndex = 33;
+            // 
             // dgvProductos
             // 
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -268,22 +286,6 @@
             // 
             LimiteStock.HeaderText = "limite";
             LimiteStock.Name = "LimiteStock";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(19, 99);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(186, 23);
-            comboBox1.TabIndex = 33;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(19, 165);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(186, 23);
-            comboBox2.TabIndex = 34;
             // 
             // FrmProductos
             // 

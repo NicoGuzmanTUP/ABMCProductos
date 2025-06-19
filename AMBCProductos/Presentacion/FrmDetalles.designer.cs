@@ -257,6 +257,7 @@
             // 
             // btnAceptar
             // 
+            btnAceptar.Anchor = AnchorStyles.None;
             btnAceptar.BackColor = SystemColors.ActiveCaption;
             btnAceptar.Highlight = false;
             btnAceptar.Location = new Point(98, 470);

@@ -31,6 +31,11 @@ namespace AMBCProductos.Negocio
             return oDao.ActualizarProducto(producto);
         }
 
+        public bool SacarProducto(int idProducto)
+        {
+            return oDao.EliminarProducto(idProducto);
+        }
+
 
         public DataTable TraerCombo(ComboBox combo, string nombreTabla, string pkTabla, string nomColumna)
         {

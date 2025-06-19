@@ -15,7 +15,8 @@ namespace AMBCProductos.Datos
         {
             List<Producto> Lista = new List<Producto>();
             //Traer dela BD
-            string consultaSQL = "select id_producto, p.nombre, tipo_producto_id, m.nombre, categoria_id, limite from productos p join marcas m on m.id_marca= p.marca_id join limites_stock ls on ls.id_limite_stock = p.limite_stock_id";
+            string consultaSQL = "select id_producto, p.nombre, tipo_producto_id, m.nombre, categoria_id, limite from productos p join marcas m on m.id_marca= p.marca_id join limites_stock ls on ls.id_limite_stock = p.limite_stock_id " +
+                "where activo is null or activo = 1";
             if (filtro != null)
             {
                 //if (filtro.Autor != 0)
@@ -85,8 +86,7 @@ namespace AMBCProductos.Datos
         {
             int filasAfectadas = 0;
 
-            string consultaSQL = $"update productos set nombre = @nombre, descripcion = @descripcion, tipo_producto_id = @idTipoProducto , marca_id = @idMarca, categoria_id = @idCategoria, peso_kg = @pesoKg, limite_stock_id = @LimiteStockId where id_producto =" + oProducto.IdProducto;
-
+            string consultaSQL = $"update productos set nombre = @nombre, descripcion = @descripcion, tipo_producto_id = @idTipoProducto , marca_id = @idMarca, categoria_id = @idCategoria, peso_kg = @pesoKg, limite_stock_id = @LimiteStockId where id_producto =" + oProducto.IdProducto;            
 
             List<Parametro> listaParametros = new List<Parametro>();
 
@@ -102,6 +102,20 @@ namespace AMBCProductos.Datos
 
             return filasAfectadas;
         }
+
+        public bool EliminarProducto(int idProducto)
+        {
+            int filasAfectadas = 0;
+
+            List<Producto> Lista = new List<Producto>();
+            //Traer dela BD
+            string consultaSQL = $"update productos set activo = 0 where id_producto = "+ idProducto;
+
+            filasAfectadas = oBD.ActualizarBD(consultaSQL);
+
+            return filasAfectadas > 0;
+        }
+
 
         public DataTable RecuperarCombo(ComboBox combo, string nombreTabla, string pkTabla, string nomColumna)
         {

@@ -82,5 +82,50 @@ namespace AMBCProductos.Presentacion
             FrmDetalles frmDetalles = new FrmDetalles(Modo.EDITAR, producto);
             frmDetalles.ShowDialog();
         }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            // Comprobación de selección de fila
+            if (dgvProductos.CurrentRow == null || dgvProductos.CurrentRow.Index < 0)
+            {
+                MessageBox.Show("Por favor, seleccione un producto de la lista",
+                                "Selección requerida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Obtener el ID del producto seleccionado
+            int idProducto = Convert.ToInt32(dgvProductos.CurrentRow.Cells[0].Value);
+
+
+            Producto producto = oServicio.TraerProducto(idProducto);
+
+
+            FrmDetalles frmDetalles = new FrmDetalles(Modo.VER, producto);
+            frmDetalles.ShowDialog();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvProductos.CurrentRow == null || dgvProductos.CurrentRow.Index < 0)
+            {
+                MessageBox.Show("Por favor, seleccione un producto de la lista",
+                                "Selección requerida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Obtener el ID del producto seleccionado
+            int idProducto = Convert.ToInt32(dgvProductos.CurrentRow.Cells[0].Value);
+
+
+            Producto producto = oServicio.TraerProducto(idProducto);
+
+
+            FrmDetalles frmDetalles = new FrmDetalles(Modo.BORRAR, producto);
+            frmDetalles.ShowDialog();
+        }
     }
 }

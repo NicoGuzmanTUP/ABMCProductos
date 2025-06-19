@@ -36,7 +36,24 @@ namespace AMBCProductos.Presentacion
             {
                 //MessageBox.Show($"id_marca = {oProducto.Marca.IdMarca}");
                 CargarCampos(oProducto);
+                if(accion == Modo.VER)
+                {
+                    btnCancelar.Visible = false;
+                    DesabilitarCampos(false);
+                    CenterAceptarButton();
+                }
+                else
+                {
+                    DesabilitarCampos(false);
+                }
             }
+        }
+
+        private void CenterAceptarButton()
+        {
+            btnAceptar.Left = (this.ClientSize.Width - btnAceptar.Width) / 2;
+            // si quieres centrar verticalmente:
+            // btnAceptar.Top = (this.ClientSize.Height - btnAceptar.Height) / 2;
         }
 
         private void CargarCampos(Producto oProducto)
@@ -152,6 +169,17 @@ namespace AMBCProductos.Presentacion
                 else
                     oServicio.MensajeAdvertencia("Intente de nuevo mas tarde");
             }
+            if(accion == Modo.VER)
+            {
+                Close();
+            }  
+            else
+            {
+                if (oServicio.SacarProducto(oProducto.IdProducto))
+                {
+                    oServicio.MensajeExito("Producto dado de baja con éxito");
+                }
+            }
         }
 
         private void LimpiarCampos()
@@ -166,6 +194,20 @@ namespace AMBCProductos.Presentacion
             rbt30.Checked = false;
             rbt50.Checked = false;
             rbt100.Checked = false;
+        }
+
+        private void DesabilitarCampos(bool x)
+        {
+            TxtCodigo.Enabled = x;
+            TxtNombre.Enabled = x;
+            txtDescripcion.Enabled = x;
+            cboTipoProducto.Enabled = x;
+            cboMarca.Enabled = x;
+            cboCategoria.Enabled = x;
+            nudPeso.Enabled = x;
+            rbt30.Enabled = x;
+            rbt50.Enabled = x;
+            rbt100.Enabled = x;
 
         }
 
