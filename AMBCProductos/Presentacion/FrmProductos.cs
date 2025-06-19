@@ -74,14 +74,11 @@ namespace AMBCProductos.Presentacion
             // Obtener el ID del producto seleccionado
             int idProducto = Convert.ToInt32(dgvProductos.CurrentRow.Cells[0].Value);
 
-            // Obtener el producto completo
-            Filtro oFiltro = new Filtro { Pk = idProducto };
 
-            List<Producto> producto = oServicio.TraerProductos(oFiltro);
+            Producto producto = oServicio.TraerProducto(idProducto);
 
-            Producto productoSeleccionado = producto[0];
 
-            FrmDetalles frmDetalles = new FrmDetalles(Modo.EDITAR, productoSeleccionado);
+            FrmDetalles frmDetalles = new FrmDetalles(Modo.EDITAR, producto);
             frmDetalles.ShowDialog();
         }
     }

@@ -1,10 +1,5 @@
 ﻿using AMBCProductos.Negocio;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AMBCProductos.Datos
 {
@@ -32,11 +27,7 @@ namespace AMBCProductos.Datos
                 //{
                 //    consultaSQL += " AND titulo like '% " + filtro.Titulo + "%'";
                 //}
-
-                if (filtro.Pk != 0)
-                {
-                    consultaSQL += $" WHERE id_producto = {filtro.Pk}";
-                }
+                
             }
 
             DataTable tabla = oBD.ConsultarBD(consultaSQL);
@@ -45,14 +36,12 @@ namespace AMBCProductos.Datos
             {
                 Producto oProducto = new Producto();
                 oProducto.IdProducto = (int)fila[0];
-                oProducto.Nombre = fila[1].ToString();
-                //oProducto.Descripcion = fila[1].ToString();
-                oProducto.TipoProductoId = Convert.ToInt32( fila[2]);
+                oProducto.Nombre = fila[1].ToString();                
+                oProducto.TipoProductoId = Convert.ToInt32(fila[2]);
                 oProducto.Marca = new Marca();
                 oProducto.Marca.Descripcion = fila[3].ToString();
                 oProducto.CategoriaId = (int)fila[4];
                 oProducto.LimiteStock = (int)fila[5];
-                //oProducto.PesoKg = Convert.ToDecimal(fila[6]);
 
                 //oProducto.RutaImg = fila[8].ToString();
                 Lista.Add(oProducto);
@@ -60,12 +49,41 @@ namespace AMBCProductos.Datos
             return Lista;
         }
 
+        public Producto RecuperarProducto(int idProducto)
+        {
+            List<Producto> Lista = new List<Producto>();
+            //Traer dela BD
+            string consultaSQL = $"select * from Productos WHERE id_producto = {idProducto}";
+
+            DataTable tabla = oBD.ConsultarBD(consultaSQL);
+            //Mapear 
+            foreach (DataRow fila in tabla.Rows)
+            {
+                Producto oProducto = new Producto();
+                oProducto.IdProducto = (int)fila[0];
+                oProducto.Nombre = fila[1].ToString();
+                oProducto.Descripcion = fila[2].ToString();
+                oProducto.TipoProductoId = Convert.ToInt32(fila[3]);
+                oProducto.Marca = new Marca();
+                oProducto.Marca.IdMarca = Convert.ToInt32(fila[4]);
+                oProducto.CategoriaId = (int)fila[5];
+                oProducto.PesoKg = Convert.ToDecimal(fila[6]);
+                oProducto.LimiteStock = (int)fila[5];
+
+                //oProducto.RutaImg = fila[8].ToString();
+                Lista.Add(oProducto);
+            }
+            return Lista[0];
+        }
+
+
+
         public int ActualizarProducto(Producto oProducto)
         {
             int filasAfectadas = 0;
 
             string consultaSQL = $"update productos set nombre = @nombre, descripcion = @descripcion, tipo_producto_id = @tipoProducto , marca_id = @marca, categoria_id = @categoria, peso_kg = @pesoKg, limite_stock_id = @limiteStock where id_producto = @idProducto";
-            
+
 
             List<Parametro> listaParametros = new List<Parametro>();
 
@@ -82,58 +100,16 @@ namespace AMBCProductos.Datos
             return filasAfectadas;
         }
 
-        public List<Marca> RecuperarMarcas()
+        public DataTable RecuperarCombo(ComboBox combo, string nombreTabla, string pkTabla, string nomColumna)
         {
-            List<Marca> Lista = new List<Marca>();
-            //Traer dela BD
-            DataTable tabla = oBD.ConsultarTabla("Marcas");
-            //Mapear Marcas
-            foreach (DataRow fila in tabla.Rows)
-            {
-                Marca oMarca = new Marca();
-                oMarca.IdMarca = (int)fila["id_marca"];
-                oMarca.Nombre = fila["nombre"].ToString();
-                oMarca.Descripcion = fila["descripcion"].ToString();
+            DataTable tabla = oBD.ConsultarTabla(nombreTabla);
+            combo.DataSource = tabla;
+            combo.ValueMember = pkTabla;
+            combo.DisplayMember = nomColumna;
+            combo.SelectedIndex = -1;
 
-                Lista.Add(oMarca);
-            }
-            return Lista;
-        }
 
-        public List<TipoProducto> RecuperarTiposProductos()
-        {
-            List<TipoProducto> Lista = new List<TipoProducto>();
-            //Traer dela BD
-            DataTable tabla = oBD.ConsultarTabla("tipos_productos");
-            //Mapear Marcas
-            foreach (DataRow fila in tabla.Rows)
-            {
-                TipoProducto oTipoProducto = new TipoProducto();
-                oTipoProducto.IdTipoProducto = (int)fila["id_tipo_producto"];
-                oTipoProducto.Nombre = fila["nombre"].ToString();
-                oTipoProducto.Descripcion = fila["descripcion"].ToString();
-
-                Lista.Add(oTipoProducto);
-            }
-            return Lista;
-        }
-
-        public List<Marca> RecuperarCategorias()
-        {
-            List<Marca> Lista = new List<Marca>();
-            //Traer dela BD
-            DataTable tabla = oBD.ConsultarTabla("Marcas");
-            //Mapear Marcas
-            foreach (DataRow fila in tabla.Rows)
-            {
-                Marca oMarca = new Marca();
-                oMarca.IdMarca = (int)fila["id_marca"];
-                oMarca.Nombre = fila["nombre"].ToString();
-                oMarca.Descripcion = fila["descripcion"].ToString();
-
-                Lista.Add(oMarca);
-            }
-            return Lista;
+            return tabla;
         }
     }
 }

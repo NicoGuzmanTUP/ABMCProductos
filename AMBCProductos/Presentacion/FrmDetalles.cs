@@ -1,18 +1,9 @@
 ﻿using AMBCProductos.Negocio;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace AMBCProductos.Presentacion
 {
     public enum Modo
-    { 
+    {
         VER,    //1. Ver detalles
         EDITAR,     //2. Editar
         BORRAR,     //3. Borrar
@@ -34,17 +25,16 @@ namespace AMBCProductos.Presentacion
 
         private void FrmDetalles_Load(object sender, EventArgs e)
         {
+            CargarCombo(cboTipoProducto, "Tipos_productos", "id_tipo_producto", "nombre");
+            CargarCombo(cboMarca, "Marcas", "id_marca", "nombre");
+            CargarCombo(cboCategoria, "Categorias", "id_categoria", "nombre");
             if (accion == Modo.NUEVO)
             {
-                //TENGO QUE BUSCAR OTRA FORMA
-                CargarCombo(cboTipoProducto);
-                CargarCombo(cboMarca);
-                //CargarCombo(cboCategoria);
                 oProducto = new Producto();
             }
             else
             {
-                MessageBox.Show($"id_producto = {oProducto.IdProducto}");
+                MessageBox.Show($"id_producto = {oProducto.Marca.IdMarca}");
                 CargarCampos(oProducto);
             }
         }
@@ -53,25 +43,24 @@ namespace AMBCProductos.Presentacion
         {
             TxtCodigo.Text = oProducto.IdProducto.ToString();
             TxtNombre.Text = oProducto.Nombre.ToString();
-            //txtDescripcion.Text = oProducto.Descripcion.ToString();
-            //cboTipoProducto.SelectedValue = oProducto.TipoProductoId;
+            if(oProducto.Descripcion == null)
+            {
+                txtDescripcion.Text = "No hay descripción disponible.";
+            }
+            else
+            {
+                txtDescripcion.Text = oProducto.Descripcion.ToString();
+            }
+            cboTipoProducto.SelectedValue = oProducto.TipoProductoId;
             cboMarca.SelectedValue = oProducto.Marca.IdMarca;
-            //cboCategoria.SelectedValue = oProducto.CategoriaId;
-            nudPeso.Value = oProducto.PesoKg;
+            cboCategoria.SelectedValue = oProducto.CategoriaId;
+            nudPeso.Value = Convert.ToDecimal(oProducto.PesoKg);
             nudLimite.Value = oProducto.LimiteStock;
         }
 
-        private void CargarCombo(ComboBox combo)
-        {            
-            var lista = oServicio.TraerMarcas();
-
-            combo.DataSource = lista;
-            combo.ValueMember = nameof(Marca.IdMarca);
-            combo.DisplayMember = nameof(Marca.Nombre);
-
-            combo.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            combo.SelectedIndex = -1;
+        private void CargarCombo(ComboBox combo, string nombreTabla, string pkTabla, string nomColumna)
+        {
+            var lista = oServicio.TraerCombo(combo, nombreTabla, pkTabla, nomColumna);
         }
 
         private void BtnAceptar_Click(object sender, EventArgs e)

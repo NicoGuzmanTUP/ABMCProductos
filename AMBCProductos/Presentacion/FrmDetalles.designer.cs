@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             GrbDetalles = new GroupBox();
-            comboBox2 = new ComboBox();
+            cboCategoria = new ComboBox();
             cboMarca = new ComboBox();
             cboTipoProducto = new ComboBox();
             nudLimite = new NumericUpDown();
@@ -54,7 +54,7 @@
             // 
             // GrbDetalles
             // 
-            GrbDetalles.Controls.Add(comboBox2);
+            GrbDetalles.Controls.Add(cboCategoria);
             GrbDetalles.Controls.Add(cboMarca);
             GrbDetalles.Controls.Add(cboTipoProducto);
             GrbDetalles.Controls.Add(nudLimite);
@@ -79,13 +79,13 @@
             GrbDetalles.TabStop = false;
             GrbDetalles.Text = "Detalles";
             // 
-            // comboBox2
+            // cboCategoria
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(158, 273);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(214, 23);
-            comboBox2.TabIndex = 56;
+            cboCategoria.FormattingEnabled = true;
+            cboCategoria.Location = new Point(158, 273);
+            cboCategoria.Name = "cboCategoria";
+            cboCategoria.Size = new Size(214, 23);
+            cboCategoria.TabIndex = 56;
             // 
             // cboMarca
             // 
@@ -286,7 +286,7 @@
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroButton btnCancelar;
         private ComboBox cboTipoProducto;
-        private ComboBox comboBox2;
+        private ComboBox cboCategoria;
         private ComboBox cboMarca;
     }
 }

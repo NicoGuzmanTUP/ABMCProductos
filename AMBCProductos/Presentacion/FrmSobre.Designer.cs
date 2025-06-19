@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAcerdaDe));
             metroTile1 = new MetroFramework.Controls.MetroTile();
-            pictureBox1 = new PictureBox();
             metroLabel1 = new MetroFramework.Controls.MetroLabel();
             metroLabel2 = new MetroFramework.Controls.MetroLabel();
             btnAceptar = new MetroFramework.Controls.MetroButton();
             metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            metroLabel4 = new MetroFramework.Controls.MetroLabel();
             SuspendLayout();
             // 
             // metroTile1
@@ -51,16 +49,6 @@
             metroTile1.Theme = MetroFramework.MetroThemeStyle.Light;
             metroTile1.TileCount = 0;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(530, 58);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(166, 142);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
             // metroLabel1
             // 
             metroLabel1.AutoSize = true;
@@ -68,7 +56,7 @@
             metroLabel1.FontSize = MetroFramework.MetroLabelSize.Medium;
             metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Light;
             metroLabel1.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            metroLabel1.Location = new Point(52, 102);
+            metroLabel1.Location = new Point(52, 138);
             metroLabel1.Name = "metroLabel1";
             metroLabel1.Size = new Size(95, 19);
             metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
@@ -85,7 +73,7 @@
             metroLabel2.FontSize = MetroFramework.MetroLabelSize.Medium;
             metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Light;
             metroLabel2.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            metroLabel2.Location = new Point(51, 148);
+            metroLabel2.Location = new Point(51, 184);
             metroLabel2.Name = "metroLabel2";
             metroLabel2.Size = new Size(69, 19);
             metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
@@ -106,6 +94,7 @@
             btnAceptar.TabIndex = 5;
             btnAceptar.Text = "Aceptar";
             btnAceptar.Theme = MetroFramework.MetroThemeStyle.Light;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // metroLabel3
             // 
@@ -116,30 +105,46 @@
             metroLabel3.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             metroLabel3.Location = new Point(51, 58);
             metroLabel3.Name = "metroLabel3";
-            metroLabel3.Size = new Size(268, 19);
+            metroLabel3.Size = new Size(165, 19);
             metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
             metroLabel3.StyleManager = null;
             metroLabel3.TabIndex = 6;
-            metroLabel3.Text = "Nombre: Facundo Nicolás Guzmán Olariaga";
+            metroLabel3.Text = "Nombre: Facundo Nicolás ";
             metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
             metroLabel3.UseStyleColors = false;
+            // 
+            // metroLabel4
+            // 
+            metroLabel4.AutoSize = true;
+            metroLabel4.CustomBackground = false;
+            metroLabel4.FontSize = MetroFramework.MetroLabelSize.Medium;
+            metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            metroLabel4.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            metroLabel4.Location = new Point(51, 95);
+            metroLabel4.Name = "metroLabel4";
+            metroLabel4.Size = new Size(168, 19);
+            metroLabel4.Style = MetroFramework.MetroColorStyle.Blue;
+            metroLabel4.StyleManager = null;
+            metroLabel4.TabIndex = 7;
+            metroLabel4.Text = "Apellido: Guzmán Olariaga";
+            metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
+            metroLabel4.UseStyleColors = false;
             // 
             // FrmAcerdaDe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 373);
+            Controls.Add(metroLabel4);
             Controls.Add(metroLabel3);
             Controls.Add(btnAceptar);
             Controls.Add(metroLabel2);
             Controls.Add(metroLabel1);
-            Controls.Add(pictureBox1);
             Controls.Add(metroTile1);
             Margin = new Padding(4, 3, 4, 3);
             Name = "FrmAcerdaDe";
             Text = "FrmSobre";
             Load += FrmFNGO_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -147,10 +152,10 @@
         #endregion
 
         private MetroFramework.Controls.MetroTile metroTile1;
-        private PictureBox pictureBox1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
     }
 }
