@@ -36,6 +36,11 @@ namespace AMBCProductos.Negocio
             return oDao.EliminarProducto(idProducto);
         }
 
+        public int CrearProducto(Producto p)
+        {
+            return oDao.InsertarProducto(p);
+        }
+
 
         public DataTable TraerCombo(ComboBox combo, string nombreTabla, string pkTabla, string nomColumna)
         {
@@ -58,6 +63,17 @@ namespace AMBCProductos.Negocio
         {
             bool yes = false;
             if (MessageBox.Show(mensaje, "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                yes = true;
+            }
+
+            return yes;
+        }
+
+        public bool MensajeBorrar(string mensaje)
+        {
+            bool yes = false;
+            if (MessageBox.Show(mensaje, "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 yes = true;
             }

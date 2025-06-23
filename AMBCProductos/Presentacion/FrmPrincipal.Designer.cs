@@ -39,7 +39,9 @@
             consulta2ToolStripMenuItem = new ToolStripMenuItem();
             aCercaDeToolStripMenuItem = new ToolStripMenuItem();
             facundoNicolásGuzmánOlariagaToolStripMenuItem = new ToolStripMenuItem();
+            chamorroToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            monierAxelAugustoToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -107,7 +109,7 @@
             // 
             // aCercaDeToolStripMenuItem
             // 
-            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem });
+            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem, chamorroToolStripMenuItem, monierAxelAugustoToolStripMenuItem });
             aCercaDeToolStripMenuItem.Name = "aCercaDeToolStripMenuItem";
             aCercaDeToolStripMenuItem.Size = new Size(83, 20);
             aCercaDeToolStripMenuItem.Text = "A cerca de...";
@@ -119,6 +121,13 @@
             facundoNicolásGuzmánOlariagaToolStripMenuItem.Text = "Facundo Nicolás Guzmán Olariaga";
             facundoNicolásGuzmánOlariagaToolStripMenuItem.Click += facundoNicolásGuzmánOlariagaToolStripMenuItem_Click;
             // 
+            // chamorroToolStripMenuItem
+            // 
+            chamorroToolStripMenuItem.Name = "chamorroToolStripMenuItem";
+            chamorroToolStripMenuItem.Size = new Size(256, 22);
+            chamorroToolStripMenuItem.Text = "Chamorro Crettino Bautista";
+            chamorroToolStripMenuItem.Click += chamorroToolStripMenuItem_Click;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -129,6 +138,13 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // monierAxelAugustoToolStripMenuItem
+            // 
+            monierAxelAugustoToolStripMenuItem.Name = "monierAxelAugustoToolStripMenuItem";
+            monierAxelAugustoToolStripMenuItem.Size = new Size(256, 22);
+            monierAxelAugustoToolStripMenuItem.Text = "Monier Axel Augusto";
+            monierAxelAugustoToolStripMenuItem.Click += monierAxelAugustoToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -164,5 +180,7 @@
         private System.Windows.Forms.ToolStripMenuItem consulta2ToolStripMenuItem;
         private PictureBox pictureBox1;
         private ToolStripMenuItem facundoNicolásGuzmánOlariagaToolStripMenuItem;
+        private ToolStripMenuItem chamorroToolStripMenuItem;
+        private ToolStripMenuItem monierAxelAugustoToolStripMenuItem;
     }
 }

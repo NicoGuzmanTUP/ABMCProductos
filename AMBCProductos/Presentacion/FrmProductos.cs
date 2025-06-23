@@ -26,14 +26,19 @@ namespace AMBCProductos.Presentacion
         private void metroButton6_Click(object sender, EventArgs e)
         {
             Filtro oFiltro = null;
-            //if (!ChkTodos.Checked)
-            //{
-            //    oFiltro = new Filtro();
-            //    if (!string.IsNullOrEmpty(TxtTitulo.Text))
-            //        oFiltro.Titulo = TxtTitulo.Text;
-            //    if (CboAutor.SelectedIndex != -1)
-            //        oFiltro.Autor = ((Autor)CboAutor.SelectedItem).Codigo;
-            //}
+            if (!chkTodos.Checked)
+            {
+                oFiltro = new Filtro();
+                
+                if(!String.IsNullOrEmpty(txtNombre.Text))
+                    oFiltro.Nombre = txtNombre.Text;
+
+                if (Convert.ToInt32(cbMarca.SelectedValue) != -1)
+                    oFiltro.Marca = Convert.ToInt32(cbMarca.SelectedValue);
+                
+                if (Convert.ToInt32(cbCategoria.SelectedValue) != -1)
+                    oFiltro.Categoria = Convert.ToInt32(cbCategoria.SelectedValue);
+            }
 
             //Cargar la grilla con los datos de la lista de productos
 
@@ -41,7 +46,7 @@ namespace AMBCProductos.Presentacion
             List<Producto> lista = oServicio.TraerProductos(oFiltro);
             foreach (Producto P in lista)
             {
-                dgvProductos.Rows.Add(P.IdProducto, P.Nombre, P.TipoProducto.IdTipoProducto, P.Marca.Descripcion, P.Categoria.IdCategoria, P.LimiteStockId);
+                dgvProductos.Rows.Add(P.IdProducto, P.Nombre, P.TipoProducto.Nombre, P.Marca.Descripcion, P.Categoria.Nombre, P.LimiteStockId);
             }
         }
 
@@ -126,6 +131,17 @@ namespace AMBCProductos.Presentacion
 
             FrmDetalles frmDetalles = new FrmDetalles(Modo.BORRAR, producto);
             frmDetalles.ShowDialog();
+        }
+
+        private void FrmProductos_Load(object sender, EventArgs e)
+        {
+            CargarCombo(cbMarca, "Marcas", "id_marca", "nombre");
+            CargarCombo(cbCategoria, "Categorias", "id_categoria", "nombre");
+        }
+
+        private void CargarCombo(ComboBox combo, string nombreTabla, string pkTabla, string nomColumna)
+        {
+            var lista = oServicio.TraerCombo(combo, nombreTabla, pkTabla, nomColumna);
         }
     }
 }

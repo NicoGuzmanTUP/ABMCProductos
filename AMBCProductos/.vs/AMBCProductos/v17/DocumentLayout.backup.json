@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\presentacion\\frmsobre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmsobre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\presentacion\\frmdetalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmdetalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:53:00.721Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmDetalles.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmDetalles.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmDetalles.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmDetalles.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FrmDetalles.cs [Dise\u00F1o]",
+              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\FrmPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T20:33:50.764Z",
+              "WhenOpened": "2025-06-23T13:32:18.079Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmProductos.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmProductos.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FrmProductos.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "FrmSobre.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmSobre.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmSobre.cs",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmSobre.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\FrmSobre.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T19:47:48.149Z",
+              "WhenOpened": "2025-06-23T13:14:58.141Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
