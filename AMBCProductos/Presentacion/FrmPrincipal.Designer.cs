@@ -37,9 +37,13 @@
             consultasToolStripMenuItem = new ToolStripMenuItem();
             consulta1ToolStripMenuItem = new ToolStripMenuItem();
             consulta2ToolStripMenuItem = new ToolStripMenuItem();
+            consulta3ToolStripMenuItem = new ToolStripMenuItem();
             aCercaDeToolStripMenuItem = new ToolStripMenuItem();
             facundoNicolásGuzmánOlariagaToolStripMenuItem = new ToolStripMenuItem();
+            chamorroToolStripMenuItem = new ToolStripMenuItem();
+            monierAxelAugustoToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            productosUltimos5AñosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -86,7 +90,7 @@
             // 
             // consultasToolStripMenuItem
             // 
-            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem });
+            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta3ToolStripMenuItem, productosUltimos5AñosToolStripMenuItem });
             consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             consultasToolStripMenuItem.Size = new Size(71, 20);
             consultasToolStripMenuItem.Text = "Consultas";
@@ -105,9 +109,16 @@
             consulta2ToolStripMenuItem.Text = "Consulta 2";
             consulta2ToolStripMenuItem.Click += consulta2ToolStripMenuItem_Click;
             // 
+            // consulta3ToolStripMenuItem
+            // 
+            consulta3ToolStripMenuItem.Name = "consulta3ToolStripMenuItem";
+            consulta3ToolStripMenuItem.Size = new Size(267, 22);
+            consulta3ToolStripMenuItem.Text = "Productos pagos con Tarjeta ";
+            consulta3ToolStripMenuItem.Click += consulta3ToolStripMenuItem_Click;
+            // 
             // aCercaDeToolStripMenuItem
             // 
-            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem });
+            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem, chamorroToolStripMenuItem, monierAxelAugustoToolStripMenuItem });
             aCercaDeToolStripMenuItem.Name = "aCercaDeToolStripMenuItem";
             aCercaDeToolStripMenuItem.Size = new Size(83, 20);
             aCercaDeToolStripMenuItem.Text = "A cerca de...";
@@ -119,6 +130,20 @@
             facundoNicolásGuzmánOlariagaToolStripMenuItem.Text = "Facundo Nicolás Guzmán Olariaga";
             facundoNicolásGuzmánOlariagaToolStripMenuItem.Click += facundoNicolásGuzmánOlariagaToolStripMenuItem_Click;
             // 
+            // chamorroToolStripMenuItem
+            // 
+            chamorroToolStripMenuItem.Name = "chamorroToolStripMenuItem";
+            chamorroToolStripMenuItem.Size = new Size(256, 22);
+            chamorroToolStripMenuItem.Text = "Chamorro Crettino Bautista";
+            chamorroToolStripMenuItem.Click += chamorroToolStripMenuItem_Click;
+            // 
+            // monierAxelAugustoToolStripMenuItem
+            // 
+            monierAxelAugustoToolStripMenuItem.Name = "monierAxelAugustoToolStripMenuItem";
+            monierAxelAugustoToolStripMenuItem.Size = new Size(256, 22);
+            monierAxelAugustoToolStripMenuItem.Text = "Monier Axel Augusto";
+            monierAxelAugustoToolStripMenuItem.Click += monierAxelAugustoToolStripMenuItem_Click;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -129,6 +154,13 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // productosUltimos5AñosToolStripMenuItem
+            // 
+            productosUltimos5AñosToolStripMenuItem.Name = "productosUltimos5AñosToolStripMenuItem";
+            productosUltimos5AñosToolStripMenuItem.Size = new Size(267, 22);
+            productosUltimos5AñosToolStripMenuItem.Text = "Productos ultimos 5 años";
+            productosUltimos5AñosToolStripMenuItem.Click += productosUltimos5AñosToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -164,5 +196,9 @@
         private System.Windows.Forms.ToolStripMenuItem consulta2ToolStripMenuItem;
         private PictureBox pictureBox1;
         private ToolStripMenuItem facundoNicolásGuzmánOlariagaToolStripMenuItem;
+        private ToolStripMenuItem chamorroToolStripMenuItem;
+        private ToolStripMenuItem monierAxelAugustoToolStripMenuItem;
+        private ToolStripMenuItem consulta3ToolStripMenuItem;
+        private ToolStripMenuItem productosUltimos5AñosToolStripMenuItem;
     }
 }

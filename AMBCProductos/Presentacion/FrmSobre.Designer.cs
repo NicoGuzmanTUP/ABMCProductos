@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAcerdaDe));
             metroTile1 = new MetroFramework.Controls.MetroTile();
             metroLabel1 = new MetroFramework.Controls.MetroLabel();
             metroLabel2 = new MetroFramework.Controls.MetroLabel();
             btnAceptar = new MetroFramework.Controls.MetroButton();
             metroLabel3 = new MetroFramework.Controls.MetroLabel();
             metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // metroTile1
@@ -130,11 +133,23 @@
             metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
             metroLabel4.UseStyleColors = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
+            pictureBox1.Location = new Point(423, 58);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(245, 199);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // FrmAcerdaDe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 373);
+            Controls.Add(pictureBox1);
             Controls.Add(metroLabel4);
             Controls.Add(metroLabel3);
             Controls.Add(btnAceptar);
@@ -143,8 +158,10 @@
             Controls.Add(metroTile1);
             Margin = new Padding(4, 3, 4, 3);
             Name = "FrmAcerdaDe";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmSobre";
             Load += FrmFNGO_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +174,6 @@
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
+        private PictureBox pictureBox1;
     }
 }

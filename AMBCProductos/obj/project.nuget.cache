@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sx34bj7hwtk=",
+  "dgSpecHash": "Yp75V8bYk6M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\AMBCProductos.csproj",
+  "projectFilePath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\AMBCProductos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\krypton.toolkit.lts\\85.25.4.111\\krypton.toolkit.lts.85.25.4.111.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\krypton.toolkit.suite.extended.outlook.grid\\85.25.4.111\\krypton.toolkit.suite.extended.outlook.grid.85.25.4.111.nupkg.sha512",

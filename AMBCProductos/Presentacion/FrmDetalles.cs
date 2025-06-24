@@ -1,4 +1,5 @@
 ﻿using AMBCProductos.Negocio;
+using System.Text.RegularExpressions;
 
 namespace AMBCProductos.Presentacion
 {
@@ -30,19 +31,36 @@ namespace AMBCProductos.Presentacion
             CargarCombo(cboCategoria, "Categorias", "id_categoria", "nombre");
             if (accion == Modo.NUEVO)
             {
-                oProducto = new Producto();
+                //oProducto = new Producto();
+                oProducto = new Producto
+                {
+                    TipoProducto = new TipoProducto(),
+                    Marca = new Marca(),
+                    Categoria = new Categoria()
+                };
             }
+            //else if (accion == Modo.EDITAR)
+            //{
+            //    if (oProducto == null)
+            //    {
+            //        oServicio.MensajeAdvertencia("No se pudo recuperar el producto seleccionado.");
+            //        Close();
+            //        return;
+            //    }
+            //    DesabilitarCampos(true);
+            //}
+
             else
             {
                 //MessageBox.Show($"id_marca = {oProducto.Marca.IdMarca}");
                 CargarCampos(oProducto);
-                if(accion == Modo.VER)
+                if (accion == Modo.VER)
                 {
                     btnCancelar.Visible = false;
                     DesabilitarCampos(false);
                     CenterAceptarButton();
                 }
-                else
+                if (accion == Modo.BORRAR)
                 {
                     DesabilitarCampos(false);
                 }
@@ -91,95 +109,148 @@ namespace AMBCProductos.Presentacion
             var lista = oServicio.TraerCombo(combo, nombreTabla, pkTabla, nomColumna);
         }
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
+        //private void BtnAceptar_Click(object sender, EventArgs e)
+        //{
+        //    if (Validar())
+        //    {
+        //        oProducto.IdProducto = Convert.ToInt32(TxtCodigo.Text);
+        //        oProducto.Nombre = TxtNombre.Text;
+        //        oProducto.Descripcion = txtDescripcion.Text;
+        //        oProducto.TipoProducto.IdTipoProducto = Convert.ToInt32(cboTipoProducto.SelectedValue);
+        //        oProducto.Marca.IdMarca = Convert.ToInt32(cboMarca.SelectedValue);
+        //        oProducto.Categoria.IdCategoria = Convert.ToInt32(cboCategoria.SelectedValue);
+        //        oProducto.PesoKg = Convert.ToDecimal(nudPeso.Value);
+        //        if (rbt30.Checked)
+        //        {
+        //            oProducto.LimiteStockId = 1;
+        //        }
+        //        if (rbt50.Checked)
+        //        {
+        //            oProducto.LimiteStockId = 5;
+        //        }
+        //        else
+        //        {
+        //            oProducto.LimiteStockId = 11;
+        //        }
+
+        //    }
+        //}
+
+        private bool Validar()
         {
-            //ValidarDatos
+            if (string.IsNullOrEmpty(TxtNombre.Text) || !Regex.IsMatch(TxtNombre.Text, @"^[A-Za-zÁÉÍÓÚáéíóúñÑ]+$"))
+            {
+                oServicio.MensajeAdvertencia("Debe ingresar un nombre válido (solo letras, sin números ni espacios)");
+                TxtNombre.Focus();
+                return false;
+            }
 
-            //Cargar el objeto
-            //oLibro.Titulo = TxtTitulo.Text;
-            //oLibro.Autor = (Autor)CboAutor.SelectedItem;
-            //if (RbtImpreso.Checked)
-            //    oLibro.Formato = 1;
-            //else
-            //    oLibro.Formato = 2;
-            //oLibro.Fecha = DtpFecha.Value;
-            //oLibro.Precio = double.Parse(TxtPrecio.Text);
+            if (!Regex.IsMatch(txtDescripcion.Text, @"^[A-Za-zÁÉÍÓÚáéíóúñÑ]+$") && txtDescripcion.Text != "")
+            {
+                oServicio.MensajeAdvertencia("Debe ingresar solo letras, sin números ni espacios");
+                txtDescripcion.Focus();
+                return false;
+            }
 
-            //if (accion == Modo.NUEVO)
-            //{
-            //    //llamar al servicio nuevo
-            //    if (oServicio.CrearLibro(oLibro) > 0)
-            //        MessageBox.Show("Se creo nuevo libro!!!");
-            //    else
-            //        MessageBox.Show("Intente más tarde!");
-            //}
-            //if (accion == Modo.EDITAR)
-            //{
-            //    //update
-            //}
+            if (cboTipoProducto.SelectedIndex == -1)
+            {
+                oServicio.MensajeAdvertencia("Debe seleccionar el tipo de producto que desea cargar");
+                return false;
+            }
+            if (cboMarca.SelectedIndex == -1)
+            {
+                oServicio.MensajeAdvertencia("Debe seleccionar la marca del producto que desea cargar");
+                return false;
+            }
+            if (cboCategoria.SelectedIndex == -1)
+            {
+                oServicio.MensajeAdvertencia("Debe seleccionar la categoria del producto que desea cargar");
+                return false;
+            }
+            if (nudPeso.Value == 0)
+            {
+                oServicio.MensajeAdvertencia("El peso cargado no puede ser 0");
+                nudPeso.Focus();
+                return false;
+            }
+            if (!rbt30.Checked && !rbt50.Checked && !rbt100.Checked)
+            {
+                oServicio.MensajeAdvertencia("Debe seleccionar un limite de stock");
+                return false;
+            }
+
+            return true;
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
+        //private void BtnCancelar_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
-            //ValidarDatos
-
-            oProducto.IdProducto = Convert.ToInt32(TxtCodigo.Text);
-            oProducto.Nombre = TxtNombre.Text;
-            oProducto.Descripcion = txtDescripcion.Text;
-            oProducto.TipoProducto.IdTipoProducto = Convert.ToInt32(cboTipoProducto.SelectedValue);
-            oProducto.Marca.IdMarca = Convert.ToInt32(cboMarca.SelectedValue);
-            oProducto.Categoria.IdCategoria = Convert.ToInt32(cboCategoria.SelectedValue);
-            oProducto.PesoKg = Convert.ToDecimal(nudPeso.Value);
-            if (rbt30.Checked)
+            if (Validar())
             {
-                oProducto.LimiteStockId = 1;
-            }
-            if (rbt50.Checked)
-            {
-                oProducto.LimiteStockId = 5;
-            }
-            else
-            {
-                oProducto.LimiteStockId = 11;
-            }
-
-
-
-            if (accion == Modo.NUEVO)
-            {
-                //llamar al servicio nuevo
-                //if (oServicio.CrearLibro(oLibro) > 0)
-                //    MessageBox.Show("Se creo nuevo libro!!!");
-                //else
-                //    MessageBox.Show("Intente más tarde!");
-            }
-            if (accion == Modo.EDITAR)
-            {
-                if (oServicio.ModificarProducto(oProducto) > 0)
+                //oProducto.IdProducto = Convert.ToInt32(TxtCodigo.Text);
+                oProducto.Nombre = TxtNombre.Text;
+                oProducto.Descripcion = txtDescripcion.Text;
+                if (String.IsNullOrEmpty(txtDescripcion.Text))
                 {
-                    oServicio.MensajeExito("Producto actualizado con éxtio!");
-                    LimpiarCampos();
+                    oProducto.Descripcion = "";
                 }
-
+                
+                oProducto.TipoProducto.IdTipoProducto = Convert.ToInt32(cboTipoProducto.SelectedValue);
+                oProducto.Marca.IdMarca = Convert.ToInt32(cboMarca.SelectedValue);
+                oProducto.Categoria.IdCategoria = Convert.ToInt32(cboCategoria.SelectedValue);
+                oProducto.PesoKg = Convert.ToDecimal(nudPeso.Value);
+                if (rbt30.Checked)
+                {
+                    oProducto.LimiteStockId = 1;
+                }
+                if (rbt50.Checked)
+                {
+                    oProducto.LimiteStockId = 5;
+                }
                 else
-                    oServicio.MensajeAdvertencia("Intente de nuevo mas tarde");
-            }
-            if(accion == Modo.VER)
-            {
-                Close();
-            }  
-            else
-            {
-                if (oServicio.SacarProducto(oProducto.IdProducto))
                 {
-                    oServicio.MensajeExito("Producto dado de baja con éxito");
+                    oProducto.LimiteStockId = 11;
+                }
+
+                if (accion == Modo.NUEVO)
+                {
+                    if (oServicio.CrearProducto(oProducto) > 0)
+                    {
+                        oServicio.MensajeExito("Se creó un nuevo producto con éxito!!!");
+                        LimpiarCampos();
+                    }                    
+                }
+                if (accion == Modo.EDITAR)
+                {
+                    if (oServicio.ModificarProducto(oProducto) > 0)
+                    {
+                        oServicio.MensajeExito("Producto actualizado con éxtio!");
+                        LimpiarCampos();
+                    }
+
+                    else
+                        oServicio.MensajeAdvertencia("Intente de nuevo mas tarde");
+                }
+                if (accion == Modo.VER)
+                {
+                    Close();
+                }
+                if(accion == Modo.BORRAR)
+                {
+                    if (oServicio.MensajeBorrar("¿Estas seguro de querer eliminar el producto"))
+                    {
+                        if (oServicio.SacarProducto(oProducto.IdProducto))
+                        {
+                            oServicio.MensajeExito("Producto dado de baja con éxito");
+                        }
+                    }                    
                 }
             }
+
         }
 
         private void LimpiarCampos()
@@ -213,7 +284,7 @@ namespace AMBCProductos.Presentacion
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-            if(oServicio.MensajePregunta("¿Estas seguro de querer cancelar?"))
+            if (oServicio.MensajePregunta("¿Estas seguro de querer cancelar?"))
             {
                 Close();
             }

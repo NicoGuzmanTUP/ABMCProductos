@@ -61,11 +61,31 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-Q6GKN7O\SQLEXPRESS;Initial Catalog=mayorista_fiambres_lacteos_DB;Integrated Security=True;.
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP\SQLEXPRESS;Initial Catalog=mayorista_fiambres_lacteos_PRUEBAAA;Integrated Security=True;Encrypt=False.
         /// </summary>
         internal static string CadenaConexionLocal {
             get {
                 return ResourceManager.GetString("CadenaConexionLocal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_carnet_bau {
+            get {
+                object obj = ResourceManager.GetObject("foto-carnet-bau", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fotooo {
+            get {
+                object obj = ResourceManager.GetObject("fotooo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

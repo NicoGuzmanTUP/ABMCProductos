@@ -1,4 +1,5 @@
-﻿using AMBCProductos.Negocio;
+﻿using AcercaDeAugusto;
+using AMBCProductos.Negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,30 @@ namespace AMBCProductos.Presentacion
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void chamorroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAcercaDeBauti frmBauti = new FrmAcercaDeBauti();
+            frmBauti.ShowDialog();
+        }
+
+        private void monierAxelAugustoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAcercaDeAugusto frmAcercaDeAugusto = new FrmAcercaDeAugusto();
+            frmAcercaDeAugusto.ShowDialog();
+        }
+
+        private void consulta3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsulta3 frmbc = new frmConsulta3();
+            frmbc.ShowDialog();
+        }
+
+        private void productosUltimos5AñosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsulta4 frmb2 = new frmConsulta4();
+            frmb2.ShowDialog();
         }
     }
 }
