@@ -139,7 +139,7 @@ namespace AMBCProductos.Presentacion
         {
             if (dgvProductos.CurrentRow == null || dgvProductos.CurrentRow.Index < 0)
             {
-                pictureBox1.Image = null;
+                CargarImagenPorDefecto();
                 return;
             }
 
@@ -147,7 +147,7 @@ namespace AMBCProductos.Presentacion
 
             if (string.IsNullOrEmpty(nombre) || nombre.ToUpper() == "NULL")
             {
-                pictureBox1.Image = null;
+                CargarImagenPorDefecto();
                 return;
             }
 
@@ -169,14 +169,90 @@ namespace AMBCProductos.Presentacion
                 }
                 else
                 {
-                    pictureBox1.Image = null;
-                    Console.WriteLine($"No se pudo cargar la imagen '{nombre}'");
+                    // Si no se puede cargar la imagen específica, cargar imagen por defecto
+                    CargarImagenPorDefecto();
+                    Console.WriteLine($"No se pudo cargar la imagen '{nombre}', cargando imagen por defecto");
                 }
             }
             catch (Exception ex)
             {
-                pictureBox1.Image = null;
+                CargarImagenPorDefecto();
                 Console.WriteLine($"Error al cargar imagen: {ex.Message}");
+            }
+        }
+
+        private void CargarImagenPorDefecto()
+        {
+            try
+            {
+                // Opción 1: Cargar una imagen por defecto desde recursos
+                Image imagenDefecto = CargarImagenDesdeRecurso("producto_no_encontrado"); // Reemplaza con el nombre de tu imagen por defecto
+
+                if (imagenDefecto != null)
+                {
+                    // Liberar imagen anterior si existe
+                    if (pictureBox1.Image != null)
+                    {
+                        pictureBox1.Image.Dispose();
+                    }
+
+                    pictureBox1.Image = imagenDefecto;
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al cargar imagen por defecto: {ex.Message}");
+                // Como último recurso, crear imagen programática
+                CrearImagenPorDefectoProgramatica();
+            }
+        }
+
+        private void CrearImagenPorDefectoProgramatica()
+        {
+            try
+            {
+                // Liberar imagen anterior si existe
+                if (pictureBox1.Image != null)
+                {
+                    pictureBox1.Image.Dispose();
+                }
+
+                // Crear una imagen simple con texto
+                Bitmap imagenDefecto = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                using (Graphics g = Graphics.FromImage(imagenDefecto))
+                {
+                    // Fondo gris claro
+                    g.Clear(Color.LightGray);
+
+                    // Dibujar borde
+                    using (Pen pen = new Pen(Color.Gray, 2))
+                    {
+                        g.DrawRectangle(pen, 1, 1, imagenDefecto.Width - 2, imagenDefecto.Height - 2);
+                    }
+
+                    // Agregar texto
+                    string texto = "Sin imagen\ndisponible";
+                    using (Font font = new Font("Arial", 12, FontStyle.Bold))
+                    {
+                        SizeF tamaño = g.MeasureString(texto, font);
+                        float x = (imagenDefecto.Width - tamaño.Width) / 2;
+                        float y = (imagenDefecto.Height - tamaño.Height) / 2;
+
+                        using (SolidBrush brush = new SolidBrush(Color.DarkGray))
+                        {
+                            g.DrawString(texto, font, brush, x, y);
+                        }
+                    }
+                }
+
+                pictureBox1.Image = imagenDefecto;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al crear imagen por defecto programática: {ex.Message}");
+                pictureBox1.Image = null;
             }
         }
 

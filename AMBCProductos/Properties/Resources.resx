@@ -133,7 +133,22 @@
   <data name="fiambre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fiambre.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="producto-no-encontrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="producto_no_encontrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\producto-no-encontrado.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lacteo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lacteo.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="importado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\importado.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="granel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\granel.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="queso_gourmet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\queso_gourmet.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mortadela_gourmet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mortadela_gourmet.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

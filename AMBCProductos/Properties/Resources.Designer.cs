@@ -100,6 +100,36 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] granel {
+            get {
+                object obj = ResourceManager.GetObject("granel", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] importado {
+            get {
+                object obj = ResourceManager.GetObject("importado", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] lacteo {
+            get {
+                object obj = ResourceManager.GetObject("lacteo", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {
@@ -112,9 +142,29 @@ namespace AMBCProductos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
+        internal static byte[] mortadela_gourmet {
+            get {
+                object obj = ResourceManager.GetObject("mortadela_gourmet", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
         internal static byte[] producto_no_encontrado {
             get {
-                object obj = ResourceManager.GetObject("producto-no-encontrado", resourceCulture);
+                object obj = ResourceManager.GetObject("producto_no_encontrado", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] queso_gourmet {
+            get {
+                object obj = ResourceManager.GetObject("queso_gourmet", resourceCulture);
                 return ((byte[])(obj));
             }
         }
