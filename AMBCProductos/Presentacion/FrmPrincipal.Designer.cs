@@ -38,12 +38,13 @@
             consulta1ToolStripMenuItem = new ToolStripMenuItem();
             consulta2ToolStripMenuItem = new ToolStripMenuItem();
             consulta3ToolStripMenuItem = new ToolStripMenuItem();
+            productosUltimos5AñosToolStripMenuItem = new ToolStripMenuItem();
             aCercaDeToolStripMenuItem = new ToolStripMenuItem();
             facundoNicolásGuzmánOlariagaToolStripMenuItem = new ToolStripMenuItem();
             chamorroToolStripMenuItem = new ToolStripMenuItem();
             monierAxelAugustoToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
-            productosUltimos5AñosToolStripMenuItem = new ToolStripMenuItem();
+            informacionEmpleadosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -90,7 +91,7 @@
             // 
             // consultasToolStripMenuItem
             // 
-            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta3ToolStripMenuItem, productosUltimos5AñosToolStripMenuItem });
+            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta3ToolStripMenuItem, productosUltimos5AñosToolStripMenuItem, informacionEmpleadosToolStripMenuItem });
             consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             consultasToolStripMenuItem.Size = new Size(71, 20);
             consultasToolStripMenuItem.Text = "Consultas";
@@ -98,7 +99,7 @@
             // consulta1ToolStripMenuItem
             // 
             consulta1ToolStripMenuItem.Name = "consulta1ToolStripMenuItem";
-            consulta1ToolStripMenuItem.Size = new Size(319, 22);
+            consulta1ToolStripMenuItem.Size = new Size(344, 22);
             consulta1ToolStripMenuItem.Text = "Camiones y Furgonetas con entregas a tiempo";
             consulta1ToolStripMenuItem.Click += consulta1ToolStripMenuItem_Click;
             // 
@@ -112,9 +113,16 @@
             // consulta3ToolStripMenuItem
             // 
             consulta3ToolStripMenuItem.Name = "consulta3ToolStripMenuItem";
-            consulta3ToolStripMenuItem.Size = new Size(267, 22);
+            consulta3ToolStripMenuItem.Size = new Size(344, 22);
             consulta3ToolStripMenuItem.Text = "Productos pagos con Tarjeta ";
             consulta3ToolStripMenuItem.Click += consulta3ToolStripMenuItem_Click;
+            // 
+            // productosUltimos5AñosToolStripMenuItem
+            // 
+            productosUltimos5AñosToolStripMenuItem.Name = "productosUltimos5AñosToolStripMenuItem";
+            productosUltimos5AñosToolStripMenuItem.Size = new Size(344, 22);
+            productosUltimos5AñosToolStripMenuItem.Text = "Productos ultimos 5 años";
+            productosUltimos5AñosToolStripMenuItem.Click += productosUltimos5AñosToolStripMenuItem_Click;
             // 
             // aCercaDeToolStripMenuItem
             // 
@@ -155,12 +163,12 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // productosUltimos5AñosToolStripMenuItem
+            // informacionEmpleadosToolStripMenuItem
             // 
-            productosUltimos5AñosToolStripMenuItem.Name = "productosUltimos5AñosToolStripMenuItem";
-            productosUltimos5AñosToolStripMenuItem.Size = new Size(267, 22);
-            productosUltimos5AñosToolStripMenuItem.Text = "Productos ultimos 5 años";
-            productosUltimos5AñosToolStripMenuItem.Click += productosUltimos5AñosToolStripMenuItem_Click;
+            informacionEmpleadosToolStripMenuItem.Name = "informacionEmpleadosToolStripMenuItem";
+            informacionEmpleadosToolStripMenuItem.Size = new Size(344, 22);
+            informacionEmpleadosToolStripMenuItem.Text = "Informacion Empleados";
+            informacionEmpleadosToolStripMenuItem.Click += informacionEmpleadosToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -200,5 +208,6 @@
         private ToolStripMenuItem monierAxelAugustoToolStripMenuItem;
         private ToolStripMenuItem consulta3ToolStripMenuItem;
         private ToolStripMenuItem productosUltimos5AñosToolStripMenuItem;
+        private ToolStripMenuItem informacionEmpleadosToolStripMenuItem;
     }
 }

@@ -87,5 +87,11 @@ namespace AMBCProductos.Presentacion
             frmConsulta4 frmb2 = new frmConsulta4();
             frmb2.ShowDialog();
         }
+
+        private void informacionEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConsulta5 frmConsulta5 = new FrmConsulta5();
+            frmConsulta5.ShowDialog();
+        }
     }
 }

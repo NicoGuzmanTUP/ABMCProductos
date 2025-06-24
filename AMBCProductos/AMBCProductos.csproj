@@ -41,9 +41,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Presentacion\AcercaDe\" />
-    <Folder Include="Presentacion\Consultas\" />
-  </ItemGroup>
-
 </Project>
