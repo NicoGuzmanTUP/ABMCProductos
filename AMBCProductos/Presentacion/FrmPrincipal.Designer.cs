@@ -37,11 +37,13 @@
             consultasToolStripMenuItem = new ToolStripMenuItem();
             consulta1ToolStripMenuItem = new ToolStripMenuItem();
             consulta2ToolStripMenuItem = new ToolStripMenuItem();
+            consulta3ToolStripMenuItem = new ToolStripMenuItem();
             aCercaDeToolStripMenuItem = new ToolStripMenuItem();
             facundoNicolásGuzmánOlariagaToolStripMenuItem = new ToolStripMenuItem();
             chamorroToolStripMenuItem = new ToolStripMenuItem();
             monierAxelAugustoToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            productosUltimos5AñosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -88,7 +90,7 @@
             // 
             // consultasToolStripMenuItem
             // 
-            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem });
+            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta3ToolStripMenuItem, productosUltimos5AñosToolStripMenuItem });
             consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             consultasToolStripMenuItem.Size = new Size(71, 20);
             consultasToolStripMenuItem.Text = "Consultas";
@@ -106,6 +108,13 @@
             consulta2ToolStripMenuItem.Size = new Size(344, 22);
             consulta2ToolStripMenuItem.Text = "Clientes Recurrentes que Compraron en Fin de Mes";
             consulta2ToolStripMenuItem.Click += consulta2ToolStripMenuItem_Click;
+            // 
+            // consulta3ToolStripMenuItem
+            // 
+            consulta3ToolStripMenuItem.Name = "consulta3ToolStripMenuItem";
+            consulta3ToolStripMenuItem.Size = new Size(267, 22);
+            consulta3ToolStripMenuItem.Text = "Productos pagos con Tarjeta ";
+            consulta3ToolStripMenuItem.Click += consulta3ToolStripMenuItem_Click;
             // 
             // aCercaDeToolStripMenuItem
             // 
@@ -146,6 +155,13 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // productosUltimos5AñosToolStripMenuItem
+            // 
+            productosUltimos5AñosToolStripMenuItem.Name = "productosUltimos5AñosToolStripMenuItem";
+            productosUltimos5AñosToolStripMenuItem.Size = new Size(267, 22);
+            productosUltimos5AñosToolStripMenuItem.Text = "Productos ultimos 5 años";
+            productosUltimos5AñosToolStripMenuItem.Click += productosUltimos5AñosToolStripMenuItem_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -182,5 +198,7 @@
         private ToolStripMenuItem facundoNicolásGuzmánOlariagaToolStripMenuItem;
         private ToolStripMenuItem chamorroToolStripMenuItem;
         private ToolStripMenuItem monierAxelAugustoToolStripMenuItem;
+        private ToolStripMenuItem consulta3ToolStripMenuItem;
+        private ToolStripMenuItem productosUltimos5AñosToolStripMenuItem;
     }
 }

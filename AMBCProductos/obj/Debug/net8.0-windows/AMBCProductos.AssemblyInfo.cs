@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AMBCProductos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f01f15909f83df879c15a30da9d448e1edc9ce43")]
 [assembly: System.Reflection.AssemblyProductAttribute("AMBCProductos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AMBCProductos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

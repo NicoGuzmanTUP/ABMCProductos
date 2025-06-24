@@ -75,5 +75,17 @@ namespace AMBCProductos.Presentacion
             FrmAcercaDeAugusto frmAcercaDeAugusto = new FrmAcercaDeAugusto();
             frmAcercaDeAugusto.ShowDialog();
         }
+
+        private void consulta3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsulta3 frmbc = new frmConsulta3();
+            frmbc.ShowDialog();
+        }
+
+        private void productosUltimos5AñosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsulta4 frmb2 = new frmConsulta4();
+            frmb2.ShowDialog();
+        }
     }
 }
