@@ -1,66 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\",
+  "WorkspaceRootPath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\presentacion\\consulta4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\consulta4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\presentacion\\frmsobre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmsobre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\presentacion\\frmconsulta3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmconsulta3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\negocio\\productoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:negocio\\productoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\presentacion\\consulta4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\consulta4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\presentacion\\frmconsulta3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmconsulta3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\presentacion\\frmdetalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmdetalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\datos\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\datos\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:datos\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\presentacion\\frmdetalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\ambcproductos\\presentacion\\frmdetalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmdetalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|c:\\users\\windows\\desktop\\tup\\programacion - logica\\tp-parte-3_2025\\abmcproductos_git\\ambcproductos\\presentacion\\frmconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\presentacion\\frmconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3E90EDFE-EFA7-48E8-B015-36FF98ED16AB}|AMBCProductos.csproj|solutionrelative:presentacion\\frmconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,188 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductoServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Negocio\\ProductoServicio.cs",
-              "RelativeDocumentMoniker": "Negocio\\ProductoServicio.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Negocio\\ProductoServicio.cs",
-              "RelativeToolTip": "Negocio\\ProductoServicio.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T23:45:24.186Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Consulta4.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\Consulta4.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Consulta4.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\Consulta4.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\Consulta4.cs [Dise\u00F1o]",
+              "Title": "FrmProductos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmProductos.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmProductos.cs",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\FrmProductos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T00:51:28.802Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-06-24T00:32:48.8Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmSobre.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmSobre.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmSobre.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmSobre.cs",
-              "RelativeToolTip": "Presentacion\\FrmSobre.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FrmDetalles.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmDetalles.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmDetalles.cs",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmDetalles.cs",
+              "RelativeToolTip": "Presentacion\\FrmDetalles.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAwwLwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T01:17:25.392Z",
+              "WhenOpened": "2025-06-23T23:45:04.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmPrincipal.cs",
-              "RelativeToolTip": "Presentacion\\FrmPrincipal.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAiwDgAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T00:47:35.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmPrincipal.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmPrincipal.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T00:50:46.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmProductos.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmProductos.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmProductos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T01:15:40.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmConsulta3.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\frmConsulta3.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmConsulta3.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\frmConsulta3.cs",
-              "RelativeToolTip": "Presentacion\\frmConsulta3.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwEAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T23:25:14.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FrmProductos.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmProductos.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmProductos.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmProductos.cs",
-              "RelativeToolTip": "Presentacion\\FrmProductos.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T01:15:54.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Consulta4.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\Consulta4.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Consulta4.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\Consulta4.cs",
-              "RelativeToolTip": "Presentacion\\Consulta4.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T00:59:33.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmConsulta3.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\frmConsulta3.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmConsulta3.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\frmConsulta3.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\frmConsulta3.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T23:16:13.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FrmDetalles.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmDetalles.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmDetalles.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmDetalles.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmDetalles.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T00:36:31.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "ProductoDao.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Datos\\ProductoDao.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Datos\\ProductoDao.cs",
               "RelativeDocumentMoniker": "Datos\\ProductoDao.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Datos\\ProductoDao.cs",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Datos\\ProductoDao.cs",
               "RelativeToolTip": "Datos\\ProductoDao.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAcwAYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T23:45:15.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FrmDetalles.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmDetalles.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmDetalles.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmDetalles.cs",
-              "RelativeToolTip": "Presentacion\\FrmDetalles.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAuwPsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T00:36:33.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FrmConsulta.cs",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmConsulta.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmConsulta.cs",
-              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmConsulta.cs",
-              "RelativeToolTip": "Presentacion\\FrmConsulta.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAlwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T23:17:48.687Z",
+              "WhenOpened": "2025-06-23T23:34:54.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FrmConsulta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\Presentacion\\FrmConsulta.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmConsulta.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmConsulta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Usuario\\Desktop\\F\\TP\\Tpi-avance2\\ABMCProductos-main\\AMBCProductos\\Presentacion\\FrmConsulta.cs [Dise\u00F1o]",
+              "DocumentIndex": 1,
+              "Title": "FrmProductos.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmProductos.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmProductos.cs",
+              "ToolTip": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\Presentacion\\FrmProductos.cs",
+              "RelativeToolTip": "Presentacion\\FrmProductos.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAI0AAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T23:17:17.252Z"
+              "WhenOpened": "2025-06-23T23:33:04.12Z",
+              "EditorCaption": ""
             }
           ]
         }

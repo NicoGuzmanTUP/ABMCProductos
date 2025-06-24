@@ -98,15 +98,15 @@
             // consulta1ToolStripMenuItem
             // 
             consulta1ToolStripMenuItem.Name = "consulta1ToolStripMenuItem";
-            consulta1ToolStripMenuItem.Size = new Size(267, 22);
-            consulta1ToolStripMenuItem.Text = "Transportistas con entregas a tiempo";
+            consulta1ToolStripMenuItem.Size = new Size(319, 22);
+            consulta1ToolStripMenuItem.Text = "Camiones y Furgonetas con entregas a tiempo";
             consulta1ToolStripMenuItem.Click += consulta1ToolStripMenuItem_Click;
             // 
             // consulta2ToolStripMenuItem
             // 
             consulta2ToolStripMenuItem.Name = "consulta2ToolStripMenuItem";
-            consulta2ToolStripMenuItem.Size = new Size(267, 22);
-            consulta2ToolStripMenuItem.Text = "Consulta 2";
+            consulta2ToolStripMenuItem.Size = new Size(344, 22);
+            consulta2ToolStripMenuItem.Text = "Clientes Recurrentes que Compraron en Fin de Mes";
             consulta2ToolStripMenuItem.Click += consulta2ToolStripMenuItem_Click;
             // 
             // consulta3ToolStripMenuItem
