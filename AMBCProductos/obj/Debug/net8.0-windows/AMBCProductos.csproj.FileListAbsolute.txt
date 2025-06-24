@@ -17,7 +17,6 @@ C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.csproj.AssemblyReference.cache
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Properties.Resources.resources
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProd.39A344FB.Up2Date
-C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmConsulta.resources
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmPrincipal.resources
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmProductos.resources
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmDetalles.resources
@@ -35,3 +34,5 @@ C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\bin\Debug\net8.0-windows\fr-FR\Krypton.Toolkit.Suite.Extended.Outlook.Grid.resources.dll
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmAcercaDeBauti.resources
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AcercaDeAugusto.FrmAcercaDeAugusto.resources
+C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmConsulta1.resources
+C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmConsulta2.resources

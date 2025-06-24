@@ -90,15 +90,15 @@ namespace AMBCProductos.Presentacion
             cboMarca.SelectedValue = oProducto.Marca.IdMarca;
             cboCategoria.SelectedValue = oProducto.Categoria.IdCategoria;
             nudPeso.Value = Convert.ToDecimal(oProducto.PesoKg);
-            if (oProducto.LimiteStockId == 1 || oProducto.LimiteStockId == 2 || oProducto.LimiteStockId == 3 || oProducto.LimiteStockId == 4)
+            if (oProducto.LimiteStockId == 1 )
             {
                 rbt30.Checked = true;
             }
-            if (oProducto.LimiteStockId == 5)
+            else if (oProducto.LimiteStockId == 2)
             {
                 rbt50.Checked = true;
             }
-            else
+            else if(oProducto.LimiteStockId == 3)
             {
                 rbt100.Checked = true;
             }
@@ -109,48 +109,21 @@ namespace AMBCProductos.Presentacion
             var lista = oServicio.TraerCombo(combo, nombreTabla, pkTabla, nomColumna);
         }
 
-        //private void BtnAceptar_Click(object sender, EventArgs e)
-        //{
-        //    if (Validar())
-        //    {
-        //        oProducto.IdProducto = Convert.ToInt32(TxtCodigo.Text);
-        //        oProducto.Nombre = TxtNombre.Text;
-        //        oProducto.Descripcion = txtDescripcion.Text;
-        //        oProducto.TipoProducto.IdTipoProducto = Convert.ToInt32(cboTipoProducto.SelectedValue);
-        //        oProducto.Marca.IdMarca = Convert.ToInt32(cboMarca.SelectedValue);
-        //        oProducto.Categoria.IdCategoria = Convert.ToInt32(cboCategoria.SelectedValue);
-        //        oProducto.PesoKg = Convert.ToDecimal(nudPeso.Value);
-        //        if (rbt30.Checked)
-        //        {
-        //            oProducto.LimiteStockId = 1;
-        //        }
-        //        if (rbt50.Checked)
-        //        {
-        //            oProducto.LimiteStockId = 5;
-        //        }
-        //        else
-        //        {
-        //            oProducto.LimiteStockId = 11;
-        //        }
-
-        //    }
-        //}
-
         private bool Validar()
         {
-            if (string.IsNullOrEmpty(TxtNombre.Text) || !Regex.IsMatch(TxtNombre.Text, @"^[A-Za-zÁÉÍÓÚáéíóúñÑ]+$"))
+            if (string.IsNullOrEmpty(TxtNombre.Text) )
             {
                 oServicio.MensajeAdvertencia("Debe ingresar un nombre válido (solo letras, sin números ni espacios)");
                 TxtNombre.Focus();
                 return false;
             }
 
-            if (!Regex.IsMatch(txtDescripcion.Text, @"^[A-Za-zÁÉÍÓÚáéíóúñÑ]+$") && txtDescripcion.Text != "")
-            {
-                oServicio.MensajeAdvertencia("Debe ingresar solo letras, sin números ni espacios");
-                txtDescripcion.Focus();
-                return false;
-            }
+            //if (!Regex.IsMatch(txtDescripcion.Text, @"^[A-Za-zÁÉÍÓÚáéíóúñÑ]+$") && txtDescripcion.Text != "")
+            //{
+            //    oServicio.MensajeAdvertencia("Debe ingresar solo letras, sin números ni espacios");
+            //    txtDescripcion.Focus();
+            //    return false;
+            //}
 
             if (cboTipoProducto.SelectedIndex == -1)
             {
@@ -182,11 +155,6 @@ namespace AMBCProductos.Presentacion
             return true;
         }
 
-        //private void BtnCancelar_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
             if (Validar())
@@ -207,13 +175,13 @@ namespace AMBCProductos.Presentacion
                 {
                     oProducto.LimiteStockId = 1;
                 }
-                if (rbt50.Checked)
+                else if (rbt50.Checked)
                 {
-                    oProducto.LimiteStockId = 5;
+                    oProducto.LimiteStockId = 2;
                 }
-                else
+                else if(rbt100.Checked)
                 {
-                    oProducto.LimiteStockId = 11;
+                    oProducto.LimiteStockId = 3;
                 }
 
                 if (accion == Modo.NUEVO)

@@ -40,8 +40,8 @@
             aCercaDeToolStripMenuItem = new ToolStripMenuItem();
             facundoNicolásGuzmánOlariagaToolStripMenuItem = new ToolStripMenuItem();
             chamorroToolStripMenuItem = new ToolStripMenuItem();
-            pictureBox1 = new PictureBox();
             monierAxelAugustoToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -96,15 +96,15 @@
             // consulta1ToolStripMenuItem
             // 
             consulta1ToolStripMenuItem.Name = "consulta1ToolStripMenuItem";
-            consulta1ToolStripMenuItem.Size = new Size(267, 22);
-            consulta1ToolStripMenuItem.Text = "Transportistas con entregas a tiempo";
+            consulta1ToolStripMenuItem.Size = new Size(319, 22);
+            consulta1ToolStripMenuItem.Text = "Camiones y Furgonetas con entregas a tiempo";
             consulta1ToolStripMenuItem.Click += consulta1ToolStripMenuItem_Click;
             // 
             // consulta2ToolStripMenuItem
             // 
             consulta2ToolStripMenuItem.Name = "consulta2ToolStripMenuItem";
-            consulta2ToolStripMenuItem.Size = new Size(267, 22);
-            consulta2ToolStripMenuItem.Text = "Consulta 2";
+            consulta2ToolStripMenuItem.Size = new Size(344, 22);
+            consulta2ToolStripMenuItem.Text = "Clientes Recurrentes que Compraron en Fin de Mes";
             consulta2ToolStripMenuItem.Click += consulta2ToolStripMenuItem_Click;
             // 
             // aCercaDeToolStripMenuItem
@@ -128,6 +128,13 @@
             chamorroToolStripMenuItem.Text = "Chamorro Crettino Bautista";
             chamorroToolStripMenuItem.Click += chamorroToolStripMenuItem_Click;
             // 
+            // monierAxelAugustoToolStripMenuItem
+            // 
+            monierAxelAugustoToolStripMenuItem.Name = "monierAxelAugustoToolStripMenuItem";
+            monierAxelAugustoToolStripMenuItem.Size = new Size(256, 22);
+            monierAxelAugustoToolStripMenuItem.Text = "Monier Axel Augusto";
+            monierAxelAugustoToolStripMenuItem.Click += monierAxelAugustoToolStripMenuItem_Click;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -138,13 +145,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            // 
-            // monierAxelAugustoToolStripMenuItem
-            // 
-            monierAxelAugustoToolStripMenuItem.Name = "monierAxelAugustoToolStripMenuItem";
-            monierAxelAugustoToolStripMenuItem.Size = new Size(256, 22);
-            monierAxelAugustoToolStripMenuItem.Text = "Monier Axel Augusto";
-            monierAxelAugustoToolStripMenuItem.Click += monierAxelAugustoToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 

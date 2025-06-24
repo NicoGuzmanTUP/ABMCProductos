@@ -37,7 +37,7 @@ namespace AMBCProductos.Presentacion
 
         private void consulta1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmConsulta fc = new FrmConsulta();
+            FrmConsulta1 fc = new FrmConsulta1();
             fc.ShowDialog();
         }
 
@@ -49,7 +49,8 @@ namespace AMBCProductos.Presentacion
 
         private void consulta2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmConsulta2 frmConsulta2 = new FrmConsulta2();
+            frmConsulta2.ShowDialog();
         }
 
         private void facundoNicolásGuzmánOlariagaToolStripMenuItem_Click(object sender, EventArgs e)

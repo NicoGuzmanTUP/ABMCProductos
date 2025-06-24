@@ -16,7 +16,7 @@ namespace AMBCProductos.Datos
             List<Producto> Lista = new List<Producto>();
             //Traer dela BD
             string consultaSQL = "select id_producto, p.nombre as producto, tp.nombre as tipo_producto, m.nombre as marca, c.nombre as categorias, limite from productos p  join marcas m on m.id_marca= p.marca_id  join tipos_productos tp on tp.id_tipo_producto = p.tipo_producto_id join categorias c on c.id_categoria = p.categoria_id join limites_stock ls on ls.id_limite_stock = p.limite_stock_id " +
-                "where (activo is null or activo = 1)";
+                "where activo = 1";
             if (filtro != null)
             {
                 if (!string.IsNullOrEmpty(filtro.Nombre))
