@@ -50,6 +50,7 @@
             descripcion = new DataGridViewTextBoxColumn();
             CategoriaId = new DataGridViewTextBoxColumn();
             LimiteStock = new DataGridViewTextBoxColumn();
+            ruta_img = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
@@ -252,17 +253,22 @@
             // 
             // dgvProductos
             // 
+            dgvProductos.AllowUserToAddRows = false;
+            dgvProductos.AllowUserToDeleteRows = false;
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProductos.Columns.AddRange(new DataGridViewColumn[] { idProducto, nombre, tipoProducto, descripcion, CategoriaId, LimiteStock });
+            dgvProductos.Columns.AddRange(new DataGridViewColumn[] { idProducto, nombre, tipoProducto, descripcion, CategoriaId, LimiteStock, ruta_img });
             dgvProductos.Location = new Point(261, 70);
             dgvProductos.Name = "dgvProductos";
+            dgvProductos.ReadOnly = true;
             dgvProductos.Size = new Size(737, 241);
             dgvProductos.TabIndex = 35;
+            dgvProductos.SelectionChanged += dgvProductos_SelectionChanged;
             // 
             // idProducto
             // 
             idProducto.HeaderText = "Código";
             idProducto.Name = "idProducto";
+            idProducto.ReadOnly = true;
             idProducto.Visible = false;
             // 
             // nombre
@@ -270,28 +276,40 @@
             nombre.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             nombre.HeaderText = "Producto";
             nombre.Name = "nombre";
+            nombre.ReadOnly = true;
             // 
             // tipoProducto
             // 
             tipoProducto.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             tipoProducto.HeaderText = "tipo de Producto";
             tipoProducto.Name = "tipoProducto";
+            tipoProducto.ReadOnly = true;
             // 
             // descripcion
             // 
             descripcion.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             descripcion.HeaderText = "Marca";
             descripcion.Name = "descripcion";
+            descripcion.ReadOnly = true;
             // 
             // CategoriaId
             // 
             CategoriaId.HeaderText = "Categoría ";
             CategoriaId.Name = "CategoriaId";
+            CategoriaId.ReadOnly = true;
             // 
             // LimiteStock
             // 
             LimiteStock.HeaderText = "limite";
             LimiteStock.Name = "LimiteStock";
+            LimiteStock.ReadOnly = true;
+            // 
+            // ruta_img
+            // 
+            ruta_img.HeaderText = "Imagen";
+            ruta_img.Name = "ruta_img";
+            ruta_img.ReadOnly = true;
+            ruta_img.Visible = false;
             // 
             // FrmProductos
             // 
@@ -341,6 +359,7 @@
         private DataGridViewTextBoxColumn descripcion;
         private DataGridViewTextBoxColumn CategoriaId;
         private DataGridViewTextBoxColumn LimiteStock;
+        private DataGridViewTextBoxColumn ruta_img;
     }
 }
 

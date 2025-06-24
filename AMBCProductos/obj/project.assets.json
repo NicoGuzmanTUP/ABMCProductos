@@ -486,11 +486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\AMBCProductos.csproj",
+      "projectUniqueName": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\AMBCProductos.csproj",
       "projectName": "AMBCProductos",
-      "projectPath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\AMBCProductos.csproj",
+      "projectPath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\AMBCProductos.csproj",
       "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\ABMCProductos_git\\AMBCProductos\\obj\\",
+      "outputPath": "C:\\Users\\Windows\\Desktop\\TUP\\programacion - logica\\TP-parte-3_2025\\AMBCProductos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

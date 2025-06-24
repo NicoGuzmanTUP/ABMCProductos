@@ -130,4 +130,10 @@
   <data name="CadenaConexionLocal" xml:space="preserve">
     <value>Data Source=DESKTOP-Q6GKN7O\SQLEXPRESS;Initial Catalog=mayorista_fiambres_lacteos_DB_logica;Integrated Security=True</value>
   </data>
+  <data name="fiambre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiambre.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="producto-no-encontrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\producto-no-encontrado.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

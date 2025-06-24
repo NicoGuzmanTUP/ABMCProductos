@@ -70,6 +70,16 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] fiambre {
+            get {
+                object obj = ResourceManager.GetObject("fiambre", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap foto_carnet_bau {
@@ -96,6 +106,16 @@ namespace AMBCProductos.Properties {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] producto_no_encontrado {
+            get {
+                object obj = ResourceManager.GetObject("producto-no-encontrado", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }
