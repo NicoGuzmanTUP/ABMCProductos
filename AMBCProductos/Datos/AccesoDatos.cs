@@ -11,9 +11,7 @@ namespace AMBCProductos.Datos
 {
     public class AccesoDatos
     {
-        //CadenaConexion:  Data Source=172.16.10.196;Initial Catalog = TUPPI; User ID = alumno1w1; Password=alumno1w1
-        //CadenaConexionLocal:  Data Source = localhost; Initial Catalog = TUPPI; Integrated Security = True; Encrypt=False
-
+        
         private string CadenaConexion = Properties.Resources.CadenaConexionLocal;
         private SqlConnection conexion;
         private SqlCommand comando;
