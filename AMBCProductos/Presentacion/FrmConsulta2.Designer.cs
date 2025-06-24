@@ -41,17 +41,21 @@
             // 
             dgvClientesRec.BorderStyle = BorderStyle.None;
             dgvClientesRec.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientesRec.Location = new Point(53, 140);
+            dgvClientesRec.Location = new Point(76, 233);
+            dgvClientesRec.Margin = new Padding(4, 5, 4, 5);
             dgvClientesRec.Name = "dgvClientesRec";
-            dgvClientesRec.Size = new Size(872, 321);
+            dgvClientesRec.RowHeadersWidth = 62;
+            dgvClientesRec.Size = new Size(1246, 535);
             dgvClientesRec.TabIndex = 0;
+            dgvClientesRec.CellContentClick += dgvClientesRec_CellContentClick;
             // 
             // metroTile1
             // 
             metroTile1.ActiveControl = null;
-            metroTile1.Location = new Point(173, 29);
+            metroTile1.Location = new Point(247, 48);
+            metroTile1.Margin = new Padding(4, 5, 4, 5);
             metroTile1.Name = "metroTile1";
-            metroTile1.Size = new Size(630, 23);
+            metroTile1.Size = new Size(900, 38);
             metroTile1.Style = MetroFramework.MetroColorStyle.Blue;
             metroTile1.StyleManager = null;
             metroTile1.TabIndex = 1;
@@ -66,7 +70,8 @@
             metroLabel1.FontSize = MetroFramework.MetroLabelSize.Medium;
             metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Light;
             metroLabel1.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            metroLabel1.Location = new Point(53, 95);
+            metroLabel1.Location = new Point(76, 158);
+            metroLabel1.Margin = new Padding(4, 0, 4, 0);
             metroLabel1.Name = "metroLabel1";
             metroLabel1.Size = new Size(109, 19);
             metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
@@ -78,42 +83,47 @@
             // 
             // btnConsultar
             // 
-            btnConsultar.Location = new Point(776, 75);
+            btnConsultar.Location = new Point(1109, 125);
+            btnConsultar.Margin = new Padding(4, 5, 4, 5);
             btnConsultar.Name = "btnConsultar";
-            btnConsultar.Size = new Size(149, 56);
+            btnConsultar.Size = new Size(213, 93);
             btnConsultar.TabIndex = 4;
             btnConsultar.Values.Text = "Consultar";
             btnConsultar.Click += kryptonButton1_Click;
             // 
             // rbtSa
             // 
-            rbtSa.Location = new Point(221, 94);
+            rbtSa.Location = new Point(316, 157);
+            rbtSa.Margin = new Padding(4, 5, 4, 5);
             rbtSa.Name = "rbtSa";
-            rbtSa.Size = new Size(40, 20);
+            rbtSa.Size = new Size(50, 29);
             rbtSa.TabIndex = 5;
             rbtSa.Values.Text = "S.A";
             // 
             // rbtLtda
             // 
-            rbtLtda.Location = new Point(344, 94);
+            rbtLtda.Location = new Point(491, 157);
+            rbtLtda.Margin = new Padding(4, 5, 4, 5);
             rbtLtda.Name = "rbtLtda";
-            rbtLtda.Size = new Size(46, 20);
+            rbtLtda.Size = new Size(60, 29);
             rbtLtda.TabIndex = 6;
             rbtLtda.Values.Text = "Ltda";
             // 
             // FrmConsulta2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(977, 473);
+            ClientSize = new Size(1396, 788);
             Controls.Add(rbtLtda);
             Controls.Add(rbtSa);
             Controls.Add(btnConsultar);
             Controls.Add(metroLabel1);
             Controls.Add(metroTile1);
             Controls.Add(dgvClientesRec);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmConsulta2";
             Text = "Clientes Recurrentes que Compraron en Fin de Mes";
+            Load += FrmConsulta2_Load;
             ((System.ComponentModel.ISupportInitialize)dgvClientesRec).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -37,13 +37,13 @@
             consultasToolStripMenuItem = new ToolStripMenuItem();
             consulta1ToolStripMenuItem = new ToolStripMenuItem();
             consulta2ToolStripMenuItem = new ToolStripMenuItem();
-            consulta3ToolStripMenuItem = new ToolStripMenuItem();
+            consulta11ToolStripMenuItem = new ToolStripMenuItem();
             aCercaDeToolStripMenuItem = new ToolStripMenuItem();
             facundoNicolásGuzmánOlariagaToolStripMenuItem = new ToolStripMenuItem();
             chamorroToolStripMenuItem = new ToolStripMenuItem();
             monierAxelAugustoToolStripMenuItem = new ToolStripMenuItem();
+            biancottiFrancoToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
-            productosUltimos5AñosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -55,8 +55,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, soporteToolStripMenuItem, consultasToolStripMenuItem, aCercaDeToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(5, 2, 0, 2);
-            menuStrip1.Size = new Size(705, 24);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(1007, 35);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -64,13 +64,13 @@
             // 
             archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            archivoToolStripMenuItem.Size = new Size(60, 20);
+            archivoToolStripMenuItem.Size = new Size(88, 29);
             archivoToolStripMenuItem.Text = "Archivo";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(96, 22);
+            toolStripMenuItem1.Size = new Size(147, 34);
             toolStripMenuItem1.Text = "Salir";
             toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
@@ -78,100 +78,106 @@
             // 
             soporteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generosToolStripMenuItem });
             soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
-            soporteToolStripMenuItem.Size = new Size(60, 20);
+            soporteToolStripMenuItem.Size = new Size(92, 29);
             soporteToolStripMenuItem.Text = "Soporte";
             // 
             // generosToolStripMenuItem
             // 
             generosToolStripMenuItem.Name = "generosToolStripMenuItem";
-            generosToolStripMenuItem.Size = new Size(165, 22);
+            generosToolStripMenuItem.Size = new Size(249, 34);
             generosToolStripMenuItem.Text = "ABMC Productos";
             generosToolStripMenuItem.Click += generosToolStripMenuItem_Click;
             // 
             // consultasToolStripMenuItem
             // 
-            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta3ToolStripMenuItem, productosUltimos5AñosToolStripMenuItem });
+            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta11ToolStripMenuItem });
             consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            consultasToolStripMenuItem.Size = new Size(71, 20);
+            consultasToolStripMenuItem.Size = new Size(105, 29);
             consultasToolStripMenuItem.Text = "Consultas";
             // 
             // consulta1ToolStripMenuItem
             // 
             consulta1ToolStripMenuItem.Name = "consulta1ToolStripMenuItem";
-            consulta1ToolStripMenuItem.Size = new Size(319, 22);
+            consulta1ToolStripMenuItem.Size = new Size(517, 34);
             consulta1ToolStripMenuItem.Text = "Camiones y Furgonetas con entregas a tiempo";
             consulta1ToolStripMenuItem.Click += consulta1ToolStripMenuItem_Click;
             // 
             // consulta2ToolStripMenuItem
             // 
             consulta2ToolStripMenuItem.Name = "consulta2ToolStripMenuItem";
-            consulta2ToolStripMenuItem.Size = new Size(344, 22);
+            consulta2ToolStripMenuItem.Size = new Size(517, 34);
             consulta2ToolStripMenuItem.Text = "Clientes Recurrentes que Compraron en Fin de Mes";
             consulta2ToolStripMenuItem.Click += consulta2ToolStripMenuItem_Click;
             // 
-            // consulta3ToolStripMenuItem
+            // consulta11ToolStripMenuItem
             // 
-            consulta3ToolStripMenuItem.Name = "consulta3ToolStripMenuItem";
-            consulta3ToolStripMenuItem.Size = new Size(267, 22);
-            consulta3ToolStripMenuItem.Text = "Productos pagos con Tarjeta ";
-            consulta3ToolStripMenuItem.Click += consulta3ToolStripMenuItem_Click;
+            consulta11ToolStripMenuItem.Name = "consulta11ToolStripMenuItem";
+            consulta11ToolStripMenuItem.Size = new Size(517, 34);
+            consulta11ToolStripMenuItem.Text = "Consulta11";
+            consulta11ToolStripMenuItem.ToolTipText = "true";
+            consulta11ToolStripMenuItem.Click += consulta11ToolStripMenuItem_Click;
             // 
             // aCercaDeToolStripMenuItem
             // 
-            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem, chamorroToolStripMenuItem, monierAxelAugustoToolStripMenuItem });
+            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem, chamorroToolStripMenuItem, monierAxelAugustoToolStripMenuItem, biancottiFrancoToolStripMenuItem });
             aCercaDeToolStripMenuItem.Name = "aCercaDeToolStripMenuItem";
-            aCercaDeToolStripMenuItem.Size = new Size(83, 20);
+            aCercaDeToolStripMenuItem.Size = new Size(122, 29);
             aCercaDeToolStripMenuItem.Text = "A cerca de...";
+            aCercaDeToolStripMenuItem.Click += aCercaDeToolStripMenuItem_Click;
             // 
             // facundoNicolásGuzmánOlariagaToolStripMenuItem
             // 
             facundoNicolásGuzmánOlariagaToolStripMenuItem.Name = "facundoNicolásGuzmánOlariagaToolStripMenuItem";
-            facundoNicolásGuzmánOlariagaToolStripMenuItem.Size = new Size(256, 22);
+            facundoNicolásGuzmánOlariagaToolStripMenuItem.Size = new Size(384, 34);
             facundoNicolásGuzmánOlariagaToolStripMenuItem.Text = "Facundo Nicolás Guzmán Olariaga";
             facundoNicolásGuzmánOlariagaToolStripMenuItem.Click += facundoNicolásGuzmánOlariagaToolStripMenuItem_Click;
             // 
             // chamorroToolStripMenuItem
             // 
             chamorroToolStripMenuItem.Name = "chamorroToolStripMenuItem";
-            chamorroToolStripMenuItem.Size = new Size(256, 22);
+            chamorroToolStripMenuItem.Size = new Size(384, 34);
             chamorroToolStripMenuItem.Text = "Chamorro Crettino Bautista";
             chamorroToolStripMenuItem.Click += chamorroToolStripMenuItem_Click;
             // 
             // monierAxelAugustoToolStripMenuItem
             // 
             monierAxelAugustoToolStripMenuItem.Name = "monierAxelAugustoToolStripMenuItem";
-            monierAxelAugustoToolStripMenuItem.Size = new Size(256, 22);
+            monierAxelAugustoToolStripMenuItem.Size = new Size(384, 34);
             monierAxelAugustoToolStripMenuItem.Text = "Monier Axel Augusto";
             monierAxelAugustoToolStripMenuItem.Click += monierAxelAugustoToolStripMenuItem_Click;
+            // 
+            // biancottiFrancoToolStripMenuItem
+            // 
+            biancottiFrancoToolStripMenuItem.CheckOnClick = true;
+            biancottiFrancoToolStripMenuItem.DoubleClickEnabled = true;
+            biancottiFrancoToolStripMenuItem.Name = "biancottiFrancoToolStripMenuItem";
+            biancottiFrancoToolStripMenuItem.Size = new Size(384, 34);
+            biancottiFrancoToolStripMenuItem.Text = "Biancotti Franco";
+            biancottiFrancoToolStripMenuItem.ToolTipText = "true";
+            biancottiFrancoToolStripMenuItem.Click += biancottiFrancoToolStripMenuItem_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(138, 48);
+            pictureBox1.Location = new Point(197, 80);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(429, 362);
+            pictureBox1.Size = new Size(613, 603);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // productosUltimos5AñosToolStripMenuItem
-            // 
-            productosUltimos5AñosToolStripMenuItem.Name = "productosUltimos5AñosToolStripMenuItem";
-            productosUltimos5AñosToolStripMenuItem.Size = new Size(267, 22);
-            productosUltimos5AñosToolStripMenuItem.Text = "Productos ultimos 5 años";
-            productosUltimos5AñosToolStripMenuItem.Click += productosUltimos5AñosToolStripMenuItem_Click;
-            // 
             // FrmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(705, 440);
+            ClientSize = new Size(1007, 733);
             Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(4);
+            Margin = new Padding(6, 7, 6, 7);
             Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmPrincipal";
@@ -198,7 +204,7 @@
         private ToolStripMenuItem facundoNicolásGuzmánOlariagaToolStripMenuItem;
         private ToolStripMenuItem chamorroToolStripMenuItem;
         private ToolStripMenuItem monierAxelAugustoToolStripMenuItem;
-        private ToolStripMenuItem consulta3ToolStripMenuItem;
-        private ToolStripMenuItem productosUltimos5AñosToolStripMenuItem;
+        private ToolStripMenuItem consulta11ToolStripMenuItem;
+        public ToolStripMenuItem biancottiFrancoToolStripMenuItem;
     }
 }

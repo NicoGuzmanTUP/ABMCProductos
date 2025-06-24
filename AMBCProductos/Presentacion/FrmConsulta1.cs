@@ -41,5 +41,9 @@ namespace AMBCProductos.Presentacion
             dgvTransportistas.DataSource = oBD.ConsultarBD(consultaSQL);
         }
 
+        private void FrmConsulta1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

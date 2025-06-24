@@ -61,7 +61,7 @@ namespace AMBCProductos.Presentacion
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void chamorroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,16 +76,21 @@ namespace AMBCProductos.Presentacion
             frmAcercaDeAugusto.ShowDialog();
         }
 
-        private void consulta3ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void biancottiFrancoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsulta3 frmbc = new frmConsulta3();
-            frmbc.ShowDialog();
+            FrmAcercaDeFranco frmAcercaDeFranco = new FrmAcercaDeFranco();
+            frmAcercaDeFranco.ShowDialog();
         }
 
-        private void productosUltimos5AñosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void aCercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsulta4 frmb2 = new frmConsulta4();
-            frmb2.ShowDialog();
+
+        }
+
+        private void consulta11ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConsulta11 frmConsulta11 = new FrmConsulta11();
+            frmConsulta11.ShowDialog();
         }
     }
 }
