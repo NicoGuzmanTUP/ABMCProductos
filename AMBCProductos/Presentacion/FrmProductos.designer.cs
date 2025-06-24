@@ -38,11 +38,11 @@
             btnVer = new MetroFramework.Controls.MetroButton();
             btnActualizar = new MetroFramework.Controls.MetroButton();
             btnEliminar = new MetroFramework.Controls.MetroButton();
-            cbTodos = new MetroFramework.Controls.MetroCheckBox();
+            chkTodos = new MetroFramework.Controls.MetroCheckBox();
             btnConsultar = new MetroFramework.Controls.MetroButton();
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            cbCategoria = new ComboBox();
+            cbMarca = new ComboBox();
             dgvProductos = new DataGridView();
             idProducto = new DataGridViewTextBoxColumn();
             nombre = new DataGridViewTextBoxColumn();
@@ -50,6 +50,7 @@
             descripcion = new DataGridViewTextBoxColumn();
             CategoriaId = new DataGridViewTextBoxColumn();
             LimiteStock = new DataGridViewTextBoxColumn();
+            ruta_img = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
@@ -77,7 +78,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(34, 70);
+            pictureBox1.Location = new Point(14, 70);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(241, 241);
             pictureBox1.TabIndex = 6;
@@ -175,22 +176,22 @@
             btnEliminar.Theme = MetroFramework.MetroThemeStyle.Light;
             btnEliminar.Click += btnEliminar_Click;
             // 
-            // cbTodos
+            // chkTodos
             // 
-            cbTodos.AutoSize = true;
-            cbTodos.CustomBackground = false;
-            cbTodos.FontSize = MetroFramework.MetroLinkSize.Small;
-            cbTodos.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            cbTodos.Location = new Point(21, 210);
-            cbTodos.Name = "cbTodos";
-            cbTodos.Size = new Size(54, 15);
-            cbTodos.Style = MetroFramework.MetroColorStyle.Blue;
-            cbTodos.StyleManager = null;
-            cbTodos.TabIndex = 31;
-            cbTodos.Text = "Todos";
-            cbTodos.Theme = MetroFramework.MetroThemeStyle.Light;
-            cbTodos.UseStyleColors = false;
-            cbTodos.UseVisualStyleBackColor = true;
+            chkTodos.AutoSize = true;
+            chkTodos.CustomBackground = false;
+            chkTodos.FontSize = MetroFramework.MetroLinkSize.Small;
+            chkTodos.FontWeight = MetroFramework.MetroLinkWeight.Regular;
+            chkTodos.Location = new Point(21, 210);
+            chkTodos.Name = "chkTodos";
+            chkTodos.Size = new Size(54, 15);
+            chkTodos.Style = MetroFramework.MetroColorStyle.Blue;
+            chkTodos.StyleManager = null;
+            chkTodos.TabIndex = 31;
+            chkTodos.Text = "Todos";
+            chkTodos.Theme = MetroFramework.MetroThemeStyle.Light;
+            chkTodos.UseStyleColors = false;
+            chkTodos.UseVisualStyleBackColor = true;
             // 
             // btnConsultar
             // 
@@ -207,10 +208,10 @@
             // 
             // metroPanel1
             // 
-            metroPanel1.Controls.Add(comboBox2);
-            metroPanel1.Controls.Add(comboBox1);
+            metroPanel1.Controls.Add(cbCategoria);
+            metroPanel1.Controls.Add(cbMarca);
             metroPanel1.Controls.Add(btnConsultar);
-            metroPanel1.Controls.Add(cbTodos);
+            metroPanel1.Controls.Add(chkTodos);
             metroPanel1.Controls.Add(txtNombre);
             metroPanel1.Controls.Add(LblNombre);
             metroPanel1.Controls.Add(LblMarca);
@@ -220,7 +221,7 @@
             metroPanel1.HorizontalScrollbarBarColor = true;
             metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             metroPanel1.HorizontalScrollbarSize = 10;
-            metroPanel1.Location = new Point(979, 70);
+            metroPanel1.Location = new Point(1004, 70);
             metroPanel1.Name = "metroPanel1";
             metroPanel1.Size = new Size(224, 241);
             metroPanel1.Style = MetroFramework.MetroColorStyle.Blue;
@@ -232,60 +233,83 @@
             metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // comboBox2
+            // cbCategoria
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(19, 165);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(186, 23);
-            comboBox2.TabIndex = 34;
+            cbCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbCategoria.FormattingEnabled = true;
+            cbCategoria.Location = new Point(19, 165);
+            cbCategoria.Name = "cbCategoria";
+            cbCategoria.Size = new Size(186, 23);
+            cbCategoria.TabIndex = 34;
             // 
-            // comboBox1
+            // cbMarca
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(19, 99);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(186, 23);
-            comboBox1.TabIndex = 33;
+            cbMarca.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbMarca.FormattingEnabled = true;
+            cbMarca.Location = new Point(19, 99);
+            cbMarca.Name = "cbMarca";
+            cbMarca.Size = new Size(186, 23);
+            cbMarca.TabIndex = 33;
             // 
             // dgvProductos
             // 
+            dgvProductos.AllowUserToAddRows = false;
+            dgvProductos.AllowUserToDeleteRows = false;
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProductos.Columns.AddRange(new DataGridViewColumn[] { idProducto, nombre, tipoProducto, descripcion, CategoriaId, LimiteStock });
-            dgvProductos.Location = new Point(301, 70);
+            dgvProductos.Columns.AddRange(new DataGridViewColumn[] { idProducto, nombre, tipoProducto, descripcion, CategoriaId, LimiteStock, ruta_img });
+            dgvProductos.Location = new Point(261, 70);
             dgvProductos.Name = "dgvProductos";
-            dgvProductos.Size = new Size(661, 241);
+            dgvProductos.ReadOnly = true;
+            dgvProductos.Size = new Size(737, 241);
             dgvProductos.TabIndex = 35;
+            dgvProductos.SelectionChanged += dgvProductos_SelectionChanged;
             // 
             // idProducto
             // 
             idProducto.HeaderText = "Código";
             idProducto.Name = "idProducto";
+            idProducto.ReadOnly = true;
+            idProducto.Visible = false;
             // 
             // nombre
             // 
+            nombre.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             nombre.HeaderText = "Producto";
             nombre.Name = "nombre";
+            nombre.ReadOnly = true;
             // 
             // tipoProducto
             // 
+            tipoProducto.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             tipoProducto.HeaderText = "tipo de Producto";
             tipoProducto.Name = "tipoProducto";
+            tipoProducto.ReadOnly = true;
             // 
             // descripcion
             // 
+            descripcion.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             descripcion.HeaderText = "Marca";
             descripcion.Name = "descripcion";
+            descripcion.ReadOnly = true;
             // 
             // CategoriaId
             // 
             CategoriaId.HeaderText = "Categoría ";
             CategoriaId.Name = "CategoriaId";
+            CategoriaId.ReadOnly = true;
             // 
             // LimiteStock
             // 
             LimiteStock.HeaderText = "limite";
             LimiteStock.Name = "LimiteStock";
+            LimiteStock.ReadOnly = true;
+            // 
+            // ruta_img
+            // 
+            ruta_img.HeaderText = "Imagen";
+            ruta_img.Name = "ruta_img";
+            ruta_img.ReadOnly = true;
+            ruta_img.Visible = false;
             // 
             // FrmProductos
             // 
@@ -304,6 +328,7 @@
             Name = "FrmProductos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Productos";
+            Load += FrmProductos_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
@@ -322,18 +347,19 @@
         private MetroFramework.Controls.MetroButton btnVer;
         private MetroFramework.Controls.MetroButton btnActualizar;
         private MetroFramework.Controls.MetroButton btnEliminar;
-        private MetroFramework.Controls.MetroCheckBox cbTodos;
+        private MetroFramework.Controls.MetroCheckBox chkTodos;
         private MetroFramework.Controls.MetroButton btnConsultar;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private DataGridView dgvProductos;
+        private ComboBox cbCategoria;
+        private ComboBox cbMarca;
         private DataGridViewTextBoxColumn idProducto;
         private DataGridViewTextBoxColumn nombre;
         private DataGridViewTextBoxColumn tipoProducto;
         private DataGridViewTextBoxColumn descripcion;
         private DataGridViewTextBoxColumn CategoriaId;
         private DataGridViewTextBoxColumn LimiteStock;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private DataGridViewTextBoxColumn ruta_img;
     }
 }
 
