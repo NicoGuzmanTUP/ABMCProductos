@@ -70,16 +70,6 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] fiambre {
-            get {
-                object obj = ResourceManager.GetObject("fiambre", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap foto_carnet_bau {
@@ -100,36 +90,6 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] granel {
-            get {
-                object obj = ResourceManager.GetObject("granel", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] importado {
-            get {
-                object obj = ResourceManager.GetObject("importado", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] lacteo {
-            get {
-                object obj = ResourceManager.GetObject("lacteo", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {
@@ -140,32 +100,12 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] mortadela_gourmet {
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_03_09_at_23_46_10 {
             get {
-                object obj = ResourceManager.GetObject("mortadela_gourmet", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] producto_no_encontrado {
-            get {
-                object obj = ResourceManager.GetObject("producto_no_encontrado", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
-        /// </summary>
-        internal static byte[] queso_gourmet {
-            get {
-                object obj = ResourceManager.GetObject("queso_gourmet", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-03-09 at 23.46.10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
