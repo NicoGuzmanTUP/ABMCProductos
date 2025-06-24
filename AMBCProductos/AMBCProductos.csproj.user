@@ -4,13 +4,13 @@
     <Compile Update="Presentacion\Consulta4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Presentacion\FrmConsulta5.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Presentacion\FrmAcercaDeAugusto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentacion\FrmAcercaDeBauti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentacion\FrmAcercaDeFranco.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentacion\FrmConsulta.cs">
@@ -19,10 +19,16 @@
     <Compile Update="Presentacion\FrmConsulta1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Presentacion\FrmConsulta11.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Presentacion\FrmConsulta2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentacion\frmConsulta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentacion\FrmConsulta5.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentacion\FrmDetalles.cs">

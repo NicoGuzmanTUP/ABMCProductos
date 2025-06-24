@@ -15,7 +15,7 @@ namespace AMBCProductos.Datos
         {
             List<Producto> Lista = new List<Producto>();
             //Traer dela BD
-            string consultaSQL = "select id_producto, p.nombre as producto, tp.nombre as tipo_producto, m.nombre as marca, c.nombre as categorias, limite from productos p  join marcas m on m.id_marca= p.marca_id  join tipos_productos tp on tp.id_tipo_producto = p.tipo_producto_id join categorias c on c.id_categoria = p.categoria_id join limites_stock ls on ls.id_limite_stock = p.limite_stock_id " +
+            string consultaSQL = "select id_producto, p.nombre as producto, tp.nombre as tipo_producto, m.nombre as marca, c.nombre as categorias, limite, ruta_img FROM productos p  join marcas m on m.id_marca= p.marca_id  join tipos_productos tp on tp.id_tipo_producto = p.tipo_producto_id join categorias c on c.id_categoria = p.categoria_id join limites_stock ls on ls.id_limite_stock = p.limite_stock_id " +
                 "where activo = 1";
             if (filtro != null)
             {
@@ -50,6 +50,7 @@ namespace AMBCProductos.Datos
                 oProducto.Categoria = new Categoria(); 
                 oProducto.Categoria.Nombre = fila[4].ToString();
                 oProducto.LimiteStockId = (int)fila[5];
+                oProducto.RutaImg = fila[6].ToString();
 
                 //oProducto.RutaImg = fila[8].ToString();
                 Lista.Add(oProducto);

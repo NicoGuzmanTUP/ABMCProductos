@@ -11,7 +11,7 @@ namespace AMBCProductos.Datos
 {
     public class AccesoDatos
     {
-        //Properties.Resources.CadenaConexionLocal;
+        
         private string CadenaConexion = Properties.Resources.CadenaConexionLocal;
         private SqlConnection conexion;
         private SqlCommand comando;

@@ -61,11 +61,21 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-0VF58E6\\SQLEXPRESS;Initial Catalog=mayorista_fiambres_lacteos_DB_logica;Integrated Security=True;.
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP-Q6GKN7O\SQLEXPRESS;Initial Catalog=mayorista_fiambres_lacteos_DB_logica;Integrated Security=True.
         /// </summary>
         internal static string CadenaConexionLocal {
             get {
                 return ResourceManager.GetString("CadenaConexionLocal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] fiambre {
+            get {
+                object obj = ResourceManager.GetObject("fiambre", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -90,12 +100,72 @@ namespace AMBCProductos.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] granel {
+            get {
+                object obj = ResourceManager.GetObject("granel", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] importado {
+            get {
+                object obj = ResourceManager.GetObject("importado", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] lacteo {
+            get {
+                object obj = ResourceManager.GetObject("lacteo", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] mortadela_gourmet {
+            get {
+                object obj = ResourceManager.GetObject("mortadela_gourmet", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] producto_no_encontrado {
+            get {
+                object obj = ResourceManager.GetObject("producto_no_encontrado", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] queso_gourmet {
+            get {
+                object obj = ResourceManager.GetObject("queso_gourmet", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

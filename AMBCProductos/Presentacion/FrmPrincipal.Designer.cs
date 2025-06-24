@@ -39,12 +39,14 @@
             consulta2ToolStripMenuItem = new ToolStripMenuItem();
             consulta3ToolStripMenuItem = new ToolStripMenuItem();
             productosUltimos5AñosToolStripMenuItem = new ToolStripMenuItem();
+            informacionEmpleadosToolStripMenuItem = new ToolStripMenuItem();
+            productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem = new ToolStripMenuItem();
             aCercaDeToolStripMenuItem = new ToolStripMenuItem();
             facundoNicolásGuzmánOlariagaToolStripMenuItem = new ToolStripMenuItem();
             chamorroToolStripMenuItem = new ToolStripMenuItem();
             monierAxelAugustoToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
-            informacionEmpleadosToolStripMenuItem = new ToolStripMenuItem();
+            biancottiFrancoToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -91,7 +93,7 @@
             // 
             // consultasToolStripMenuItem
             // 
-            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta3ToolStripMenuItem, productosUltimos5AñosToolStripMenuItem, informacionEmpleadosToolStripMenuItem });
+            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consulta1ToolStripMenuItem, consulta2ToolStripMenuItem, consulta3ToolStripMenuItem, productosUltimos5AñosToolStripMenuItem, informacionEmpleadosToolStripMenuItem, productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem });
             consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             consultasToolStripMenuItem.Size = new Size(71, 20);
             consultasToolStripMenuItem.Text = "Consultas";
@@ -99,34 +101,48 @@
             // consulta1ToolStripMenuItem
             // 
             consulta1ToolStripMenuItem.Name = "consulta1ToolStripMenuItem";
-            consulta1ToolStripMenuItem.Size = new Size(344, 22);
+            consulta1ToolStripMenuItem.Size = new Size(548, 22);
             consulta1ToolStripMenuItem.Text = "Camiones y Furgonetas con entregas a tiempo";
             consulta1ToolStripMenuItem.Click += consulta1ToolStripMenuItem_Click;
             // 
             // consulta2ToolStripMenuItem
             // 
             consulta2ToolStripMenuItem.Name = "consulta2ToolStripMenuItem";
-            consulta2ToolStripMenuItem.Size = new Size(344, 22);
+            consulta2ToolStripMenuItem.Size = new Size(548, 22);
             consulta2ToolStripMenuItem.Text = "Clientes Recurrentes que Compraron en Fin de Mes";
             consulta2ToolStripMenuItem.Click += consulta2ToolStripMenuItem_Click;
             // 
             // consulta3ToolStripMenuItem
             // 
             consulta3ToolStripMenuItem.Name = "consulta3ToolStripMenuItem";
-            consulta3ToolStripMenuItem.Size = new Size(344, 22);
+            consulta3ToolStripMenuItem.Size = new Size(548, 22);
             consulta3ToolStripMenuItem.Text = "Productos pagos con Tarjeta ";
             consulta3ToolStripMenuItem.Click += consulta3ToolStripMenuItem_Click;
             // 
             // productosUltimos5AñosToolStripMenuItem
             // 
             productosUltimos5AñosToolStripMenuItem.Name = "productosUltimos5AñosToolStripMenuItem";
-            productosUltimos5AñosToolStripMenuItem.Size = new Size(344, 22);
+            productosUltimos5AñosToolStripMenuItem.Size = new Size(548, 22);
             productosUltimos5AñosToolStripMenuItem.Text = "Productos ultimos 5 años";
             productosUltimos5AñosToolStripMenuItem.Click += productosUltimos5AñosToolStripMenuItem_Click;
             // 
+            // informacionEmpleadosToolStripMenuItem
+            // 
+            informacionEmpleadosToolStripMenuItem.Name = "informacionEmpleadosToolStripMenuItem";
+            informacionEmpleadosToolStripMenuItem.Size = new Size(548, 22);
+            informacionEmpleadosToolStripMenuItem.Text = "Informacion Empleados";
+            informacionEmpleadosToolStripMenuItem.Click += informacionEmpleadosToolStripMenuItem_Click;
+            // 
+            // productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem
+            // 
+            productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem.Name = "productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem";
+            productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem.Size = new Size(548, 22);
+            productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem.Text = "Productos de categorías gourmet, granel e importados con stock entre 100 y 300 unidades";
+            productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem.Click += productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem_Click;
+            // 
             // aCercaDeToolStripMenuItem
             // 
-            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem, chamorroToolStripMenuItem, monierAxelAugustoToolStripMenuItem });
+            aCercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { facundoNicolásGuzmánOlariagaToolStripMenuItem, chamorroToolStripMenuItem, monierAxelAugustoToolStripMenuItem, biancottiFrancoToolStripMenuItem });
             aCercaDeToolStripMenuItem.Name = "aCercaDeToolStripMenuItem";
             aCercaDeToolStripMenuItem.Size = new Size(83, 20);
             aCercaDeToolStripMenuItem.Text = "A cerca de...";
@@ -163,12 +179,12 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // informacionEmpleadosToolStripMenuItem
+            // biancottiFrancoToolStripMenuItem
             // 
-            informacionEmpleadosToolStripMenuItem.Name = "informacionEmpleadosToolStripMenuItem";
-            informacionEmpleadosToolStripMenuItem.Size = new Size(344, 22);
-            informacionEmpleadosToolStripMenuItem.Text = "Informacion Empleados";
-            informacionEmpleadosToolStripMenuItem.Click += informacionEmpleadosToolStripMenuItem_Click;
+            biancottiFrancoToolStripMenuItem.Name = "biancottiFrancoToolStripMenuItem";
+            biancottiFrancoToolStripMenuItem.Size = new Size(256, 22);
+            biancottiFrancoToolStripMenuItem.Text = "Biancotti Franco";
+            biancottiFrancoToolStripMenuItem.Click += biancottiFrancoToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -209,5 +225,7 @@
         private ToolStripMenuItem consulta3ToolStripMenuItem;
         private ToolStripMenuItem productosUltimos5AñosToolStripMenuItem;
         private ToolStripMenuItem informacionEmpleadosToolStripMenuItem;
+        private ToolStripMenuItem productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem;
+        private ToolStripMenuItem biancottiFrancoToolStripMenuItem;
     }
 }

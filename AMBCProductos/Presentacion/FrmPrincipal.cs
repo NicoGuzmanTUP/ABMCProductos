@@ -93,5 +93,18 @@ namespace AMBCProductos.Presentacion
             FrmConsulta5 frmConsulta5 = new FrmConsulta5();
             frmConsulta5.ShowDialog();
         }
+
+        private void productosDeCategoríasGourmetGranelEImportadosConStockEntre100Y300UnidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConsulta11 frmConsulta11 = new FrmConsulta11();
+            frmConsulta11.ShowDialog();
+        }
+
+        private void biancottiFrancoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAcercaDeFranco frmAcercaDeFranco = new FrmAcercaDeFranco();
+            frmAcercaDeFranco.ShowDialog();
+        }
     }
 }
+
