@@ -26,6 +26,23 @@ namespace AMBCProductos.Presentacion
 
         private void FrmDetalles_Load(object sender, EventArgs e)
         {
+            TxtNombre.Focus();
+
+            GrbDetalles.TabIndex = 0;
+            GrbDetalles.TabStop = false;
+
+            TxtNombre.TabIndex = 0;
+            txtDescripcion.TabIndex = 1;
+            cboTipoProducto.TabIndex = 2;
+            cboMarca.TabIndex = 3;
+            cboCategoria.TabIndex = 4;
+            nudPeso.TabIndex = 5;
+            rbt30.TabIndex = 6;
+
+            btnAceptar.TabIndex = 1;
+            btnCancelar.TabIndex = 2;
+
+
             CargarCombo(cboTipoProducto, "Tipos_productos", "id_tipo_producto", "nombre");
             CargarCombo(cboMarca, "Marcas", "id_marca", "nombre");
             CargarCombo(cboCategoria, "Categorias", "id_categoria", "nombre");

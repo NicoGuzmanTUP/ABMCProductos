@@ -78,7 +78,7 @@
             GrbDetalles.Name = "GrbDetalles";
             GrbDetalles.Padding = new Padding(4);
             GrbDetalles.Size = new Size(420, 431);
-            GrbDetalles.TabIndex = 35;
+            GrbDetalles.TabIndex = 0;
             GrbDetalles.TabStop = false;
             GrbDetalles.Text = "Detalles";
             // 
@@ -88,7 +88,7 @@
             rbt100.Location = new Point(309, 379);
             rbt100.Name = "rbt100";
             rbt100.Size = new Size(43, 19);
-            rbt100.TabIndex = 59;
+            rbt100.TabIndex = 8;
             rbt100.TabStop = true;
             rbt100.Text = "100";
             rbt100.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             rbt50.Location = new Point(236, 379);
             rbt50.Name = "rbt50";
             rbt50.Size = new Size(37, 19);
-            rbt50.TabIndex = 58;
+            rbt50.TabIndex = 7;
             rbt50.TabStop = true;
             rbt50.Text = "50";
             rbt50.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
             rbt30.Location = new Point(157, 379);
             rbt30.Name = "rbt30";
             rbt30.Size = new Size(37, 19);
-            rbt30.TabIndex = 57;
+            rbt30.TabIndex = 6;
             rbt30.TabStop = true;
             rbt30.Text = "30";
             rbt30.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@
             cboCategoria.Location = new Point(158, 273);
             cboCategoria.Name = "cboCategoria";
             cboCategoria.Size = new Size(214, 23);
-            cboCategoria.TabIndex = 56;
+            cboCategoria.TabIndex = 4;
             // 
             // cboMarca
             // 
@@ -131,7 +131,7 @@
             cboMarca.Location = new Point(158, 219);
             cboMarca.Name = "cboMarca";
             cboMarca.Size = new Size(214, 23);
-            cboMarca.TabIndex = 55;
+            cboMarca.TabIndex = 3;
             // 
             // cboTipoProducto
             // 
@@ -140,7 +140,7 @@
             cboTipoProducto.Location = new Point(158, 166);
             cboTipoProducto.Name = "cboTipoProducto";
             cboTipoProducto.Size = new Size(215, 23);
-            cboTipoProducto.TabIndex = 54;
+            cboTipoProducto.TabIndex = 2;
             // 
             // label5
             // 
@@ -158,7 +158,7 @@
             nudPeso.Location = new Point(157, 323);
             nudPeso.Name = "nudPeso";
             nudPeso.Size = new Size(65, 23);
-            nudPeso.TabIndex = 51;
+            nudPeso.TabIndex = 5;
             // 
             // label4
             // 
@@ -206,7 +206,7 @@
             txtDescripcion.Margin = new Padding(4);
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(215, 23);
-            txtDescripcion.TabIndex = 43;
+            txtDescripcion.TabIndex = 1;
             // 
             // TxtNombre
             // 
@@ -214,7 +214,7 @@
             TxtNombre.Margin = new Padding(4);
             TxtNombre.Name = "TxtNombre";
             TxtNombre.Size = new Size(215, 23);
-            TxtNombre.TabIndex = 32;
+            TxtNombre.TabIndex = 0;
             // 
             // TxtCodigo
             // 
@@ -223,7 +223,7 @@
             TxtCodigo.Margin = new Padding(4);
             TxtCodigo.Name = "TxtCodigo";
             TxtCodigo.Size = new Size(116, 23);
-            TxtCodigo.TabIndex = 30;
+            TxtCodigo.TabIndex = 0;
             // 
             // LblAutor
             // 
@@ -259,13 +259,14 @@
             // 
             btnAceptar.Anchor = AnchorStyles.None;
             btnAceptar.BackColor = SystemColors.ActiveCaption;
+            btnAceptar.FlatStyle = FlatStyle.System;
             btnAceptar.Highlight = false;
             btnAceptar.Location = new Point(98, 470);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(94, 55);
             btnAceptar.Style = MetroFramework.MetroColorStyle.Blue;
             btnAceptar.StyleManager = null;
-            btnAceptar.TabIndex = 54;
+            btnAceptar.TabIndex = 0;
             btnAceptar.Text = "Aceptar";
             btnAceptar.Theme = MetroFramework.MetroThemeStyle.Light;
             btnAceptar.UseVisualStyleBackColor = false;
@@ -273,13 +274,14 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.FlatStyle = FlatStyle.System;
             btnCancelar.Highlight = false;
             btnCancelar.Location = new Point(290, 470);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 55);
             btnCancelar.Style = MetroFramework.MetroColorStyle.Blue;
             btnCancelar.StyleManager = null;
-            btnCancelar.TabIndex = 55;
+            btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
             btnCancelar.Theme = MetroFramework.MetroThemeStyle.Light;
             btnCancelar.Click += btnCancelar_Click_1;

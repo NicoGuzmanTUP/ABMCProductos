@@ -1,5 +1,6 @@
 ﻿using AMBCProductos.Datos;
 using AMBCProductos.Negocio;
+using MetroFramework.Controls;
 using System.Reflection;
 
 namespace AMBCProductos.Presentacion
@@ -126,6 +127,27 @@ namespace AMBCProductos.Presentacion
 
         private void FrmProductos_Load(object sender, EventArgs e)
         {
+
+            this.BeginInvoke(new Action(()=> txtNombre.Focus()));
+            metroPanel1.TabStop = false;
+            metroPanel1.TabIndex = 0;
+
+            txtNombre.TabIndex = 0;
+            cbMarca.TabIndex = 1;
+            cbCategoria.TabIndex = 2;
+            chkTodos.TabIndex = 3;
+            btnConsultar.TabIndex = 4;
+
+            dgvProductos.TabStop = false;
+            dgvProductos.TabIndex = 1;
+
+            btnNuevo.TabIndex = 2;
+            btnVer.TabIndex = 3;
+            btnActualizar.TabIndex = 4;
+            btnEliminar.TabIndex = 5;
+            btnSalir.TabIndex = 6;
+
+
             CargarCombo(cbMarca, "Marcas", "id_marca", "nombre");
             CargarCombo(cbCategoria, "Categorias", "id_categoria", "nombre");
         }

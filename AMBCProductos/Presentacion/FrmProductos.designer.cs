@@ -78,7 +78,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(14, 70);
+            pictureBox1.Location = new Point(1004, 70);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(241, 241);
             pictureBox1.TabIndex = 6;
@@ -107,71 +107,76 @@
             txtNombre.Size = new Size(186, 23);
             txtNombre.Style = MetroFramework.MetroColorStyle.White;
             txtNombre.StyleManager = null;
-            txtNombre.TabIndex = 23;
+            txtNombre.TabIndex = 0;
             txtNombre.Theme = MetroFramework.MetroThemeStyle.Light;
             txtNombre.UseStyleColors = false;
             // 
             // btnSalir
             // 
+            btnSalir.FlatStyle = FlatStyle.System;
             btnSalir.Highlight = false;
             btnSalir.Location = new Point(1034, 338);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(97, 78);
             btnSalir.Style = MetroFramework.MetroColorStyle.Blue;
             btnSalir.StyleManager = null;
-            btnSalir.TabIndex = 26;
+            btnSalir.TabIndex = 6;
             btnSalir.Text = "Salir";
             btnSalir.Theme = MetroFramework.MetroThemeStyle.Light;
             btnSalir.Click += metroButton1_Click;
             // 
             // btnNuevo
             // 
+            btnNuevo.FlatStyle = FlatStyle.System;
             btnNuevo.Highlight = false;
             btnNuevo.Location = new Point(34, 338);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(118, 78);
             btnNuevo.Style = MetroFramework.MetroColorStyle.Blue;
             btnNuevo.StyleManager = null;
-            btnNuevo.TabIndex = 27;
+            btnNuevo.TabIndex = 2;
             btnNuevo.Text = "Nuevo";
             btnNuevo.Theme = MetroFramework.MetroThemeStyle.Light;
             btnNuevo.Click += btnNuevo_Click;
             // 
             // btnVer
             // 
+            btnVer.FlatStyle = FlatStyle.System;
             btnVer.Highlight = false;
             btnVer.Location = new Point(203, 338);
             btnVer.Name = "btnVer";
             btnVer.Size = new Size(118, 78);
             btnVer.Style = MetroFramework.MetroColorStyle.Blue;
             btnVer.StyleManager = null;
-            btnVer.TabIndex = 28;
+            btnVer.TabIndex = 3;
             btnVer.Text = "Ver";
             btnVer.Theme = MetroFramework.MetroThemeStyle.Light;
             btnVer.Click += btnVer_Click;
             // 
             // btnActualizar
             // 
+            btnActualizar.FlatStyle = FlatStyle.System;
             btnActualizar.Highlight = false;
             btnActualizar.Location = new Point(371, 338);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(118, 78);
             btnActualizar.Style = MetroFramework.MetroColorStyle.Blue;
             btnActualizar.StyleManager = null;
-            btnActualizar.TabIndex = 29;
+            btnActualizar.TabIndex = 4;
             btnActualizar.Text = "Actualizar";
             btnActualizar.Theme = MetroFramework.MetroThemeStyle.Light;
             btnActualizar.Click += btnActualizar_Click;
             // 
             // btnEliminar
             // 
+            btnEliminar.FlatStyle = FlatStyle.System;
             btnEliminar.Highlight = false;
             btnEliminar.Location = new Point(541, 338);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(118, 78);
             btnEliminar.Style = MetroFramework.MetroColorStyle.Blue;
             btnEliminar.StyleManager = null;
-            btnEliminar.TabIndex = 30;
+            btnEliminar.TabIndex = 5;
             btnEliminar.Text = "Eliminar";
             btnEliminar.Theme = MetroFramework.MetroThemeStyle.Light;
             btnEliminar.Click += btnEliminar_Click;
@@ -180,6 +185,7 @@
             // 
             chkTodos.AutoSize = true;
             chkTodos.CustomBackground = false;
+            chkTodos.FlatStyle = FlatStyle.System;
             chkTodos.FontSize = MetroFramework.MetroLinkSize.Small;
             chkTodos.FontWeight = MetroFramework.MetroLinkWeight.Regular;
             chkTodos.Location = new Point(21, 210);
@@ -187,7 +193,7 @@
             chkTodos.Size = new Size(54, 15);
             chkTodos.Style = MetroFramework.MetroColorStyle.Blue;
             chkTodos.StyleManager = null;
-            chkTodos.TabIndex = 31;
+            chkTodos.TabIndex = 3;
             chkTodos.Text = "Todos";
             chkTodos.Theme = MetroFramework.MetroThemeStyle.Light;
             chkTodos.UseStyleColors = false;
@@ -195,13 +201,14 @@
             // 
             // btnConsultar
             // 
+            btnConsultar.FlatStyle = FlatStyle.System;
             btnConsultar.Highlight = false;
             btnConsultar.Location = new Point(110, 206);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(97, 22);
             btnConsultar.Style = MetroFramework.MetroColorStyle.Blue;
             btnConsultar.StyleManager = null;
-            btnConsultar.TabIndex = 32;
+            btnConsultar.TabIndex = 4;
             btnConsultar.Text = "Consultar";
             btnConsultar.Theme = MetroFramework.MetroThemeStyle.Light;
             btnConsultar.Click += metroButton6_Click;
@@ -221,12 +228,12 @@
             metroPanel1.HorizontalScrollbarBarColor = true;
             metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             metroPanel1.HorizontalScrollbarSize = 10;
-            metroPanel1.Location = new Point(1004, 70);
+            metroPanel1.Location = new Point(12, 70);
             metroPanel1.Name = "metroPanel1";
             metroPanel1.Size = new Size(224, 241);
             metroPanel1.Style = MetroFramework.MetroColorStyle.Blue;
             metroPanel1.StyleManager = null;
-            metroPanel1.TabIndex = 34;
+            metroPanel1.TabIndex = 0;
             metroPanel1.Theme = MetroFramework.MetroThemeStyle.Light;
             metroPanel1.VerticalScrollbar = false;
             metroPanel1.VerticalScrollbarBarColor = true;
@@ -240,7 +247,7 @@
             cbCategoria.Location = new Point(19, 165);
             cbCategoria.Name = "cbCategoria";
             cbCategoria.Size = new Size(186, 23);
-            cbCategoria.TabIndex = 34;
+            cbCategoria.TabIndex = 2;
             // 
             // cbMarca
             // 
@@ -249,19 +256,20 @@
             cbMarca.Location = new Point(19, 99);
             cbMarca.Name = "cbMarca";
             cbMarca.Size = new Size(186, 23);
-            cbMarca.TabIndex = 33;
+            cbMarca.TabIndex = 1;
             // 
             // dgvProductos
             // 
             dgvProductos.AllowUserToAddRows = false;
             dgvProductos.AllowUserToDeleteRows = false;
+            dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProductos.Columns.AddRange(new DataGridViewColumn[] { idProducto, nombre, tipoProducto, descripcion, CategoriaId, LimiteStock, ruta_img });
             dgvProductos.Location = new Point(261, 70);
             dgvProductos.Name = "dgvProductos";
             dgvProductos.ReadOnly = true;
             dgvProductos.Size = new Size(737, 241);
-            dgvProductos.TabIndex = 35;
+            dgvProductos.TabIndex = 1;
             dgvProductos.SelectionChanged += dgvProductos_SelectionChanged;
             // 
             // idProducto
@@ -315,7 +323,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1240, 437);
+            ClientSize = new Size(1254, 437);
             Controls.Add(dgvProductos);
             Controls.Add(metroPanel1);
             Controls.Add(btnEliminar);
