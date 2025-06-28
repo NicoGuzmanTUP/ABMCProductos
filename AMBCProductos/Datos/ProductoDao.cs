@@ -21,7 +21,7 @@ namespace AMBCProductos.Datos
             {
                 if (!string.IsNullOrEmpty(filtro.Nombre))
                 {
-                    consultaSQL += " AND p.nombre like '%" + filtro.Nombre + "%'";
+                    consultaSQL += $" AND LOWER(p.nombre) like '%{filtro.Nombre}%'";
                 }
 
                 if (filtro.Marca != 0)

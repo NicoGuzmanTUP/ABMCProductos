@@ -128,19 +128,21 @@ namespace AMBCProductos.Presentacion
 
         private bool Validar()
         {
-            if (string.IsNullOrEmpty(TxtNombre.Text) )
+            var textoN = TxtNombre.Text.Trim();
+            if (string.IsNullOrEmpty(TxtNombre.Text) || !Regex.IsMatch(textoN, @"^[\p{L} ]+$"))
             {
-                oServicio.MensajeAdvertencia("Debe ingresar un nombre válido (solo letras, sin números ni espacios)");
+                oServicio.MensajeAdvertencia("Debe ingresar un nombre válido (solo letras, sin números)");
                 TxtNombre.Focus();
                 return false;
             }
 
-            //if (!Regex.IsMatch(txtDescripcion.Text, @"^[A-Za-zÁÉÍÓÚáéíóúñÑ]+$") && txtDescripcion.Text != "")
-            //{
-            //    oServicio.MensajeAdvertencia("Debe ingresar solo letras, sin números ni espacios");
-            //    txtDescripcion.Focus();
-            //    return false;
-            //}
+            var textoD = txtDescripcion.Text.Trim();
+            if (!Regex.IsMatch(textoD, @"^[\p{L} ]+$") && txtDescripcion.Text != "")
+            {
+                oServicio.MensajeAdvertencia("Debe ingresar solo letras, sin números ni espacios vacíos");
+                txtDescripcion.Focus();
+                return false;
+            }
 
             if (cboTipoProducto.SelectedIndex == -1)
             {

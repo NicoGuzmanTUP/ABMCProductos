@@ -84,3 +84,6 @@ C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmConsulta5.resources
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmConsulta11.resources
 C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmAcercaDeFranco.resources
+C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\ABMCProductos_git\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmAcercaDeFranco.resources
+C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\ABMCProductos_git\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmConsulta11.resources
+C:\Users\Windows\Desktop\TUP\programacion - logica\TP-parte-3_2025\ABMCProductos_git\AMBCProductos\obj\Debug\net8.0-windows\AMBCProductos.Presentacion.FrmConsulta5.resources
